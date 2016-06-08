@@ -49,7 +49,7 @@
     width:170px;
     height:140px;
 }
- */
+ 
 /*heaer css for default page*/
 .home-header h1{
     text-align:center;
@@ -110,4 +110,19 @@
 	text-align: center;
 	line-height: 35px;
 	margin-left: 3px;
+}
+
+.ext-docs>div.row-fluid{
+    padding-bottom: 50px;
+}
+
+/*fix top*/
+.navbar-fixed-top{
+    margin-top:0 !important;
+}
+
+/*doc button*/
+.box{
+    border: solid black;
+    padding: 15px;
 }
