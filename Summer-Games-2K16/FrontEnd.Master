@@ -1,5 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FrontEnd.master.cs" Inherits="Summer_Games_2K16.FrontEnd" %>
-
+<!-- Project : Summer Games 2K16 -->
 <!DOCTYPE html>
 
 <html lang="en">
