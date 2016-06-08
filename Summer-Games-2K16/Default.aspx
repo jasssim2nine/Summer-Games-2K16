@@ -8,4 +8,7 @@
     Version : 1.1
     Description : A default page to display the game tracking table and a main game.
     -->
+    <div class="home-header">
+    <h1> Summer Games 2016</h1>
+        </div>
 </asp:Content>

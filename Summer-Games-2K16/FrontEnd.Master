@@ -1,4 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FrontEnd.master.cs" Inherits="Summer_Games_2K16.FrontEnd" %>
+<%@ Register Src="~/User_Controls/Navbar.ascx" TagPrefix="bs29" TagName="Navbar" %>
+<%@ Register Src="~/User_Controls/Footer.ascx" TagPrefix="bs29" TagName="Footer" %>
 <!-- 
     Author Name : Jasim Khan, Ebin Antoo
     Student # : 200263011, 200269378
@@ -24,12 +26,14 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
+    <bs29:Navbar runat="server"/>
     <form id="frontEndForm" runat="server">
     <div>
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
     </asp:ContentPlaceHolder>
     </div>
     </form>
+    <bs29:Footer runat="server" />
     <!-- javascript section -->
     <script src="Scripts/jquery-2.2.3.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
