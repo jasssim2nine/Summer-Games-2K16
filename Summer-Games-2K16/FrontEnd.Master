@@ -1,19 +1,10 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FrontEnd.master.cs" Inherits="Summer_Games_2K16.FrontEnd" %>
-<!-- Project : Summer Games 2K16 -->
+
 <!DOCTYPE html>
 
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Summer Games 2K16</title>
-    <!--CSS Section -->
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
-    <link href="Content/font-awesome.min.css" rel="stylesheet" />
-    <link href="Content/App.css" rel="stylesheet" />
-
+    <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -25,9 +16,5 @@
         </asp:ContentPlaceHolder>
     </div>
     </form>
-    <!--Javascript Section -->
-    <script src="Scripts/jquery-2.2.3.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
-    <script src="Scripts/App.js"></script>
 </body>
 </html>
