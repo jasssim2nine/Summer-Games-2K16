@@ -7,3 +7,45 @@
     Version : 1.1
     Description : custom css for designing manually.
  */
+
+/*global*/
+.head-h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0.3em;
+}
+
+@media (min-width: 768px){
+    ul.nav.navbar-nav{
+        padding-left:25%;
+    }
+}
+
+.divider{
+    display: inline-block;
+    width: 20%;
+    color: inherit;
+    padding: 0;
+    border-bottom: 3px solid;
+}
+
+.divider-1{
+    display: inline-block;
+    width: 100%;
+    color: inherit;
+    padding: 0;
+    border-bottom: 3px solid;
+}
+
+.desc{
+    color: rgb(101, 101, 101);
+    font-weight: 300;
+    letter-spacing: 0.08em;
+}
+
+.ver-his{
+    width:170px;
+    height:140px;
+}
