@@ -49,3 +49,65 @@
     width:170px;
     height:140px;
 }
+ */
+/*heaer css for default page*/
+.home-header h1{
+    text-align:center;
+}
+
+    /*footer css*/
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+
+	width: 100%;
+	text-align: left;
+	font: normal 12px sans-serif;
+
+	padding: 20px 20px;
+	margin-top: 30px;
+}
+/*css for footer coor and font*/
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+/*p tag in footer*/
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.0;
+	text-decoration: none;
+	color:  inherit;
+}
+/*right links in footer*/
+.footer-distributed .footer-right{
+	float: right;
+	margin-top:-4%;
+	max-width: 180px;
+}
+/*anchors in right links of footer*/
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 25px;
+	background-color:  #33383b;
+	border-radius:1px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-left: 3px;
+}
