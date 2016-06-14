@@ -9,13 +9,13 @@
     Description : A default page to display the game tracking table and a main game.
     -->
     <div class="home-header">
-        <h1> Summer Games 2016</h1>
+        <h1> SUMMER GAMES 2016</h1>
     </div>
 
-    
+    <div class="container feed">
+        <div class="row">
 
-    <div>
-      <a class="btn btn-large btn-success center-block" style="width:30%;" href="/docs/">DOCUMENTATION</a>
-    </div>
+        </div><!-- end of row -->
+    </div><!--feed-->
     
 </asp:Content>

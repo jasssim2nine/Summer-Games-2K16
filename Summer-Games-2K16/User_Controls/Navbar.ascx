@@ -17,20 +17,21 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><i class="fa fa-trophy" aria-hidden="true"></i> SUMMER GAMES 2K16</a>
+            <a class="navbar-brand" href="#">SUMMER GAMES 2K16</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse game-name-nav" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="#">Soccer</a></li>
-                <li><a href="#">Cricket</a></li>
-                <li><a href="#">Baseball</a></li>
-                <li><a href="#">Basketball</a></li>
-                
+                <li><a href="#">|</a></li>
+                <li><a href="#">SOCCER</a></li>
+                <li><a href="#">CRICKET</a></li>
+                <li><a href="#">BASEBALL</a></li>
+                <li><a href="#">BASKETBALL</a></li>                
             </ul>
             
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
+                <li><a href="/docs/">DOCS</a></li>
+                <li><a href="#">ADMIN</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
