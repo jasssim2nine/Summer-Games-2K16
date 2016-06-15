@@ -1,0 +1,32 @@
+﻿<%@ Page Title="Cricket" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Cricket.aspx.cs" Inherits="Summer_Games_2K16.Cricket" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="container">
+        <div class="row">
+            <h3 style="text-align:center;"> ICC CRICKET WORLD CUP</h3>
+            <div class="col-md-offset-2 col-md-8 text-center">
+                <h2> POINTS TABLE</h2>
+
+                <asp:GridView ID="CricketGridView" AutoGenerateColumns="false"  CssClass="table table-bordered"
+                      runat="server">
+                    <Columns>
+                        <asp:BoundField DataField="DESCRIPTION" HeaderText="Description" Visible="true"/>
+                        <asp:BoundField DataField="SPECTATORS" HeaderText="Spectators" Visible="true"/>
+                        <asp:BoundField DataField="TEAM_A" HeaderText="Team A" Visible="true"/>
+                        <asp:BoundField DataField="TEAM_B" HeaderText="Team B" Visible="true"/>
+                        <asp:BoundField DataField="PLAYED_ON" HeaderText="Played on" Visible="true" DataFormatString="{0:MMM dd, yyyy}"/>
+                        <asp:BoundField DataField="WINNER" HeaderText="Winner" Visible="true"/>
+                        <asp:BoundField DataField="TEAM_A_POINTS" HeaderText="Team A Points" Visible="true"/>
+                        <asp:BoundField DataField="TEAM_B_POINTS" HeaderText="Team B Points" Visible="true"/>
+                    </Columns>
+                    
+                </asp:GridView>
+                
+                 <a href="#" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Submit</a>
+                
+            </div>
+        </div>
+    </div>
+    
+
+</asp:Content>

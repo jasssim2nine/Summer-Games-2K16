@@ -24,7 +24,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="#">|</a></li>
                 <li><a href="#">SOCCER</a></li>
-                <li><a href="#">CRICKET</a></li>
+                <li><a href="../Cricket.aspx">CRICKET</a></li>
                 <li><a href="#">BASEBALL</a></li>
                 <li><a href="#">BASKETBALL</a></li>                
             </ul>
