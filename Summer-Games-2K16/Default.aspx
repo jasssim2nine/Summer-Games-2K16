@@ -11,11 +11,39 @@
     <div class="home-header">
         <h1> SUMMER GAMES 2016</h1>
     </div>
+    
+    <div class="container" style="padding-top:50px;">
+        <div class="row font-view">
+            <div class="col-md-3 soccer">
+                <img src="Assets/images/soccer.jpg" />
+                <div class="text-center center-block cen-text">
+                    <a href="soccer.aspx">
+                        <span class="center-block">SOCCER</span>
+                    </a>
+                </div>                
+            </div>
 
-    <div class="container feed">
-        <div class="row">
-
-        </div><!-- end of row -->
-    </div><!--feed-->
+            <div class="col-md-3 cricket">
+                <img src="Assets/images/cricket.jpg" />
+                <div class="text-center center-block cen-text">
+                    <a href="cricket.aspx">
+                        <span class="center-block">CRICKET</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 baseball">
+                <img src="Assets/images/baseball.jpg" />
+                <div class="text-center center-block cen-text" style="left:15%;">
+                    <span class="center-block">BASEBALL</span>
+                </div>
+            </div>
+            <div class="col-md-3 basketball">
+                <img src="Assets/images/basketball.jpg" />
+                <div class="text-center center-block cen-text" style="left:5%;">
+                    <span class="center-block">BASKETBALL</span>
+                </div>
+            </div>
+        </div>
+    </div>
     
 </asp:Content>
