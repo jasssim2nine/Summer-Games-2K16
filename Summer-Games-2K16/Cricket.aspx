@@ -6,7 +6,18 @@
             <h3 style="text-align:center;"> ICC CRICKET WORLD CUP</h3>
             <div class="col-md-offset-2 col-md-8 text-center">
                 <h2> POINTS TABLE</h2>
-
+                    <div class="container feed">
+                       <div class="row">
+                           <div class="col-offset-3 text-center">
+                               <nav>
+                                 <ul class="pager">
+                                   <li><a href="#">PREVIOUS WEEK</a></li>
+                                   <li><a href="#">NEXT WEEK</a></li>
+                                 </ul>
+                               </nav>
+                           </div>
+                       </div><!-- end of row -->
+                   </div><!--feed-->
                 <asp:GridView ID="CricketGridView" AutoGenerateColumns="false"  CssClass="table table-bordered"
                       runat="server">
                     <Columns>

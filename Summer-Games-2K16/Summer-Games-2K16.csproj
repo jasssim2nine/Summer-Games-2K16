@@ -88,6 +88,7 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Cricket.aspx" />
+    <Content Include="Cricket_Details.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="docs\index.html" />
     <Content Include="fonts\fontawesome-webfont.svg" />
@@ -160,6 +161,13 @@
     </Compile>
     <Compile Include="Cricket.aspx.designer.cs">
       <DependentUpon>Cricket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cricket_Details.aspx.cs">
+      <DependentUpon>Cricket_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cricket_Details.aspx.designer.cs">
+      <DependentUpon>Cricket_Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
