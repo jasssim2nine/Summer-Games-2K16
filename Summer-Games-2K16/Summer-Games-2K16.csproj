@@ -80,6 +80,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\images\git_screenshot.JPG" />
+    <Content Include="Assets\images\screenshot.JPG" />
     <Content Include="Baseball.aspx" />
     <Content Include="Baseball_Details.aspx" />
     <Content Include="Basketball.aspx" />

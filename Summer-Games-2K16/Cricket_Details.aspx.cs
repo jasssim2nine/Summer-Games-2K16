@@ -21,13 +21,17 @@ namespace Summer_Games_2K16
             }
         }
 
-        /// <summary>
-        /// This method connects the database and populates the query. 
-        /// </summary>
-        /// @Param (object) 
-        /// @Param (GetDepartments)
-        /// @returns (void)
 
+
+        /**
+         * 
+         * <summary>
+         * This method gets the cricket data from database
+         * </summary>
+         * @method GetDepartments
+         * 
+         * @returns {void}      
+         */
         protected void GetCricketData()
         {
             int GameID = Convert.ToInt32(Request.QueryString["GAMEID"]);
@@ -52,11 +56,30 @@ namespace Summer_Games_2K16
             }
         }
 
+        /**          
+        * <summary>
+        * This method takes back to the previous page, cancel
+        * </summary>
+        * @method CancelButton_Click
+        * @param {object} sender
+        * @param {EventArgs} e
+        * @returns {void}      
+        */
         protected void CancelButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Cricket.aspx");
         }
 
+
+        /**          
+         * <summary>
+         * This method saves the operation
+         * </summary>
+         * @method SaveButton_Click
+         * @param {object} sender
+         * @param {EventArgs} e
+         * @returns {void}      
+         */
         protected void SaveButton_Click(object sender, EventArgs e)
         {
             // Use EF to connect to the server

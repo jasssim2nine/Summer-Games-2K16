@@ -9,6 +9,7 @@ using System.Web.UI.WebControls;
 using Summer_Games_2K16.Models;
 using System.Web.ModelBinding;
 using System.Linq.Dynamic;
+
 namespace Summer_Games_2K16
 {
     public partial class Cricket : System.Web.UI.Page
@@ -22,11 +23,17 @@ namespace Summer_Games_2K16
                 this.GetCricketData();
             }
         }
-        /// <summary>
-        /// This method connects to db and displays cricket data.
-        /// </summary>
-        /// @method GetCricketData
-        /// @returns {void}
+
+
+        /**
+         *
+         *<summary>
+         * This method connects to db and displays cricket data.
+         * </summary> 
+         * 
+         * @method GetCricketData
+         * @returns {void}
+         */
         protected void GetCricketData()
         {
             //connect to EF
