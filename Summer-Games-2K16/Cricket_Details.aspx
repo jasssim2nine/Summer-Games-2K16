@@ -35,7 +35,7 @@
                 
                 <div class="form-group">
                     <label class="control-label" for="PlayedOnTextBox">Played-On</label>
-                    <asp:TextBox runat="server" TextMode="Date" CssClass="form-control" ID="PlayedOnTextBox" placeholder="Description" required="true"></asp:TextBox>
+                    <asp:TextBox runat="server" CssClass="form-control" TextMode="Date" ID="PlayedOnTextBox" placeholder="Description" required="true"></asp:TextBox>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="WinnerTextBox">Winner</label>
