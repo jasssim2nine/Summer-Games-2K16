@@ -80,6 +80,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Baseball.aspx" />
+    <Content Include="Baseball_Details.aspx" />
+    <Content Include="Basketball.aspx" />
+    <Content Include="Basketball_Details.aspx" />
     <Content Include="Content\App.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -150,11 +154,41 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Soccer.aspx" />
+    <Content Include="Soccer_Details.aspx" />
     <Content Include="User_Controls\Footer.ascx" />
     <Content Include="User_Controls\Navbar.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Baseball.aspx.cs">
+      <DependentUpon>Baseball.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Baseball.aspx.designer.cs">
+      <DependentUpon>Baseball.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Baseball_Details.aspx.cs">
+      <DependentUpon>Baseball_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Baseball_Details.aspx.designer.cs">
+      <DependentUpon>Baseball_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Basketball.aspx.cs">
+      <DependentUpon>Basketball.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Basketball.aspx.designer.cs">
+      <DependentUpon>Basketball.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Basketball_Details.aspx.cs">
+      <DependentUpon>Basketball_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Basketball_Details.aspx.designer.cs">
+      <DependentUpon>Basketball_Details.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Cricket.aspx.cs">
       <DependentUpon>Cricket.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -214,6 +248,20 @@
       <DependentUpon>GameTrackerModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Soccer.aspx.cs">
+      <DependentUpon>Soccer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Soccer.aspx.designer.cs">
+      <DependentUpon>Soccer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Soccer_Details.aspx.cs">
+      <DependentUpon>Soccer_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Soccer_Details.aspx.designer.cs">
+      <DependentUpon>Soccer_Details.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User_Controls\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
