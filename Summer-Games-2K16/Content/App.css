@@ -155,3 +155,7 @@
     text-decoration:none;
     color:white;
 }
+
+.hvr-underline-from-center:before{
+    background: red !important;
+}

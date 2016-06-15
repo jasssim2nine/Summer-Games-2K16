@@ -34,13 +34,17 @@
             <div class="col-md-3 baseball">
                 <img src="Assets/images/baseball.jpg" />
                 <div class="text-center center-block cen-text" style="left:15%;">
-                    <span class="center-block">BASEBALL</span>
+                    <a href="baseball.aspx">
+                        <span class="center-block">BASEBALL</span>
+                    </a>
                 </div>
             </div>
             <div class="col-md-3 basketball">
                 <img src="Assets/images/basketball.jpg" />
                 <div class="text-center center-block cen-text" style="left:5%;">
-                    <span class="center-block">BASKETBALL</span>
+                    <a href="basketball.aspx">
+                        <span class="center-block">BASKETBALL</span>
+                    </a>
                 </div>
             </div>
         </div>

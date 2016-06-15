@@ -19,7 +19,8 @@
     <!-- css section -->
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
-    <link href="Content/font-awesome.min.css" rel="stylesheet" />        
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />      
+    <link href="Content/hover-min.css" rel="stylesheet" />
     <link href="Content/App.css" rel="stylesheet" />
     
     <asp:ContentPlaceHolder ID="head" runat="server">

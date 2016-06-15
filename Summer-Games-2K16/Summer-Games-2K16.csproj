@@ -77,7 +77,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
-    <Content Include="Content\rangecalendar.css" />
+    <Content Include="Content\hover-min.css" />
     <Content Include="Default.aspx" />
     <Content Include="docs\index.html" />
     <Content Include="fonts\fontawesome-webfont.svg" />
