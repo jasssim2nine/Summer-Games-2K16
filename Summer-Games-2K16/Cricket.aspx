@@ -21,6 +21,7 @@
                 <asp:GridView ID="CricketGridView" AutoGenerateColumns="false"  CssClass="table table-bordered"
                       runat="server">
                     <Columns>
+                         <asp:BoundField DataField="GAMEID" HeaderText="GameID" Visible="true"/>
                         <asp:BoundField DataField="DESCRIPTION" HeaderText="Description" Visible="true"/>
                         <asp:BoundField DataField="SPECTATORS" HeaderText="Spectators" Visible="true"/>
                         <asp:BoundField DataField="TEAM_A" HeaderText="Team A" Visible="true"/>
@@ -33,7 +34,7 @@
                     
                 </asp:GridView>
                 
-                 <a href="#" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Submit</a>
+                 <a href="cricket_details.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Submit</a>
                 
             </div>
         </div>

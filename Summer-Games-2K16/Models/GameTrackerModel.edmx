@@ -176,7 +176,7 @@ warning 6002: The table/view 'comp-s2016-database.dbo.GAMES' does not have a pri
           <Property Name="EnrollmentDate" Type="DateTime" Nullable="false" Precision="0" />
           <NavigationProperty Name="Enrollments" Relationship="Self.FK_Enrollments_StudentID" FromRole="Students" ToRole="Enrollments" />
         </EntityType>
-        <EntityType Name="GAME">
+        <EntityType Name="GAMES">
           <Key>
             <PropertyRef Name="GAMEID" />
             <PropertyRef Name="SPECTATORS" />
@@ -238,7 +238,7 @@ warning 6002: The table/view 'comp-s2016-database.dbo.GAMES' does not have a pri
           <EntitySet Name="Departments" EntityType="Self.Department" />
           <EntitySet Name="Enrollments" EntityType="Self.Enrollment" />
           <EntitySet Name="Students" EntityType="Self.Student" />
-          <EntitySet Name="GAMES" EntityType="Self.GAME" />
+          <EntitySet Name="GAMES" EntityType="GameTrackerModel.GAMES" />
           <AssociationSet Name="FK_Courses_DepartmentID" Association="Self.FK_Courses_DepartmentID">
             <End Role="Departments" EntitySet="Departments" />
             <End Role="Courses" EntitySet="Courses" />
@@ -298,7 +298,7 @@ warning 6002: The table/view 'comp-s2016-database.dbo.GAMES' does not have a pri
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="GAMES">
-            <EntityTypeMapping TypeName="GameTrackerModel.GAME">
+            <EntityTypeMapping TypeName="GameTrackerModel.GAMES">
               <MappingFragment StoreEntitySet="GAMES">
                 <ScalarProperty Name="GAMEID" ColumnName="GAMEID" />
                 <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />

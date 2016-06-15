@@ -12,7 +12,7 @@ namespace Summer_Games_2K16.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class GAME
+    public partial class GAMES
     {
         public int GAMEID { get; set; }
         public string DESCRIPTION { get; set; }

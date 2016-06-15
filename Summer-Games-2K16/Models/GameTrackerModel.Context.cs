@@ -29,6 +29,6 @@ namespace Summer_Games_2K16.Models
         public virtual DbSet<Department> Departments { get; set; }
         public virtual DbSet<Enrollment> Enrollments { get; set; }
         public virtual DbSet<Student> Students { get; set; }
-        public virtual DbSet<GAME> GAMES { get; set; }
+        public virtual DbSet<GAMES> GAMES { get; set; }
     }
 }

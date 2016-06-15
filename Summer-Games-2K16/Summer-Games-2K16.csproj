@@ -192,7 +192,7 @@
     <Compile Include="Models\Enrollment.cs">
       <DependentUpon>GameTrackerModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GAME.cs">
+    <Compile Include="Models\GAMES.cs">
       <DependentUpon>GameTrackerModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\GameTrackerModel.Context.cs">
