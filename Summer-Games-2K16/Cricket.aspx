@@ -34,7 +34,7 @@
                     
                 </asp:GridView>
                 
-                 <a href="cricket_details.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Submit</a>
+                 <a href="cricket_details.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</a>
                 
             </div>
         </div>

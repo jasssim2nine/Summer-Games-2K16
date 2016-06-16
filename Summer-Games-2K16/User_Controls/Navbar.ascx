@@ -26,7 +26,7 @@
                 <li class="hvr-underline-from-center"><a href="../Soccer.aspx">SOCCER</a></li>
                 <li class="hvr-underline-from-center"><a href="Cricket.aspx">CRICKET</a></li>
                 <li class="hvr-underline-from-center"><a href="Baseball.aspx">BASEBALL</a></li>
-                <li class="hvr-underline-from-center"><a href="Baasketball.aspx">BASKETBALL</a></li>                
+                <li class="hvr-underline-from-center"><a href="Basketball.aspx">BASKETBALL</a></li>                
             </ul>
             
             <ul class="nav navbar-nav navbar-right">
