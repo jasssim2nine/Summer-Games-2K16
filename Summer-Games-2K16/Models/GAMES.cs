@@ -16,7 +16,7 @@ namespace Summer_Games_2K16.Models
     {
         public int GAMEID { get; set; }
         public string DESCRIPTION { get; set; }
-        public int SPECTATORS { get; set; }
+        public Nullable<int> SPECTATORS { get; set; }
         public string TEAM_A { get; set; }
         public string TEAM_B { get; set; }
         public System.DateTime PLAYED_ON { get; set; }

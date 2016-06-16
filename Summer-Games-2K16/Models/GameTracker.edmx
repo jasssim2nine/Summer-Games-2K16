@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="GameTrackerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="GameTrackerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Courses">
           <Key>
             <PropertyRef Name="CourseID" />
@@ -31,22 +31,13 @@
           <Property Name="StudentID" Type="int" Nullable="false" />
           <Property Name="Grade" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'comp-s2016-database.dbo.GAMES' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="GAMES">
           <Key>
             <PropertyRef Name="GAMEID" />
-            <PropertyRef Name="SPECTATORS" />
-            <PropertyRef Name="TEAM_A" />
-            <PropertyRef Name="TEAM_B" />
-            <PropertyRef Name="PLAYED_ON" />
-            <PropertyRef Name="WINNER" />
-            <PropertyRef Name="TEAM_A_POINTS" />
-            <PropertyRef Name="TEAM_B_POINTS" />
           </Key>
           <Property Name="GAMEID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="DESCRIPTION" Type="varchar" MaxLength="250" />
-          <Property Name="SPECTATORS" Type="int" Nullable="false" />
+          <Property Name="SPECTATORS" Type="int" />
           <Property Name="TEAM_A" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="TEAM_B" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="PLAYED_ON" Type="date" Nullable="false" />
@@ -103,20 +94,8 @@ warning 6002: The table/view 'comp-s2016-database.dbo.GAMES' does not have a pri
           <EntitySet Name="Courses" EntityType="Self.Courses" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Departments" EntityType="Self.Departments" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Enrollments" EntityType="Self.Enrollments" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GAMES" EntityType="Self.GAMES" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Students" EntityType="Self.Students" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="GAMES" EntityType="Self.GAMES" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [GAMES].[GAMEID] AS [GAMEID], 
-    [GAMES].[DESCRIPTION] AS [DESCRIPTION], 
-    [GAMES].[SPECTATORS] AS [SPECTATORS], 
-    [GAMES].[TEAM_A] AS [TEAM_A], 
-    [GAMES].[TEAM_B] AS [TEAM_B], 
-    [GAMES].[PLAYED_ON] AS [PLAYED_ON], 
-    [GAMES].[WINNER] AS [WINNER], 
-    [GAMES].[TEAM_A_POINTS] AS [TEAM_A_POINTS], 
-    [GAMES].[TEAM_B_POINTS] AS [TEAM_B_POINTS]
-    FROM [dbo].[GAMES] AS [GAMES]</DefiningQuery>
-          </EntitySet>
           <AssociationSet Name="FK_Courses_DepartmentID" Association="Self.FK_Courses_DepartmentID">
             <End Role="Departments" EntitySet="Departments" />
             <End Role="Courses" EntitySet="Courses" />
@@ -130,8 +109,7 @@ warning 6002: The table/view 'comp-s2016-database.dbo.GAMES' does not have a pri
             <End Role="Enrollments" EntitySet="Enrollments" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="GameTrackerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -179,17 +157,10 @@ warning 6002: The table/view 'comp-s2016-database.dbo.GAMES' does not have a pri
         <EntityType Name="GAMES">
           <Key>
             <PropertyRef Name="GAMEID" />
-            <PropertyRef Name="SPECTATORS" />
-            <PropertyRef Name="TEAM_A" />
-            <PropertyRef Name="TEAM_B" />
-            <PropertyRef Name="PLAYED_ON" />
-            <PropertyRef Name="WINNER" />
-            <PropertyRef Name="TEAM_A_POINTS" />
-            <PropertyRef Name="TEAM_B_POINTS" />
           </Key>
           <Property Name="GAMEID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="DESCRIPTION" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
-          <Property Name="SPECTATORS" Type="Int32" Nullable="false" />
+          <Property Name="SPECTATORS" Type="Int32" />
           <Property Name="TEAM_A" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="TEAM_B" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="PLAYED_ON" Type="DateTime" Nullable="false" Precision="0" />

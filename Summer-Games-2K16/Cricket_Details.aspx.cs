@@ -108,7 +108,7 @@ namespace Summer_Games_2K16
                 newGame.TEAM_B_POINTS = Convert.ToInt32(PointBTextBox.Text);
                 newGame.WINNER = WinnerTextBox.Text;
 
-                if (SpectatorsTextBox.Text != "0")
+                
                     newGame.SPECTATORS = Convert.ToInt32(SpectatorsTextBox.Text);
                 
                 newGame.PLAYED_ON = Convert.ToDateTime(PlayedOnTextBox.Text);
