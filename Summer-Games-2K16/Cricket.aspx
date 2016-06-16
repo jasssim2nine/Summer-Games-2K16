@@ -7,7 +7,7 @@
     Description : A default navbar for all pages.
  --%>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="container">
+    <div class="container-fluid" style="overflow:hidden;">
         <div class="row">
             <h3 style="text-align:center;"> ICC CRICKET WORLD CUP</h3>
             <div class="col-md-offset-2 col-md-8 text-center">
@@ -17,7 +17,7 @@
                            <div class="col-offset-3 text-center">
                                <nav>
                                  <ul class="pager">
-                                   <li><a href="#" style="float:left;clear:both">PREVIOUS WEEK</a></li>
+                                   <li><a href="#" >PREVIOUS WEEK</a></li>
                                    <li><a href="#">NEXT WEEK</a></li>
                                  </ul>
                                </nav>
