@@ -25,6 +25,7 @@
     
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <meta name="description" content="The description of my page" />
 </head>
 <body>
     <bs29:Navbar runat="server"/>

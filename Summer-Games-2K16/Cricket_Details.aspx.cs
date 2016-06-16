@@ -62,19 +62,20 @@ namespace Summer_Games_2K16
             using (DefaultConnection db = new DefaultConnection())
             {
                 GAMES newGame = new GAMES();
-                int GameID = 0;
+                int specs = Convert.ToInt32(SpectatorsTextBox.Text);
+                int GAMEID = 0;
                 if (Request.QueryString.Count > 0)
                 {
-                    GameID = Convert.ToInt32(Request.QueryString["GAMEID"]);
+                    GAMEID = Convert.ToInt32(Request.QueryString["GAMEID"]);
 
                     newGame = (from GAMES in db.GAMES
-                               where GAMES.GAMEID == GameID
+                               where GAMES.GAMEID == GAMEID
                                select GAMES).FirstOrDefault();
 
                 }
 
                 newGame.DESCRIPTION = DescriptionTextBox.Text;
-                 newGame.SPECTATORS = Convert.ToInt32(SpectatorsTextBox.Text);
+                newGame.SPECTATORS = specs;
                 newGame.TEAM_A = TeamATextBox.Text;
                 newGame.TEAM_A_POINTS = Convert.ToInt32(PointATextBox.Text);
                 newGame.TEAM_B = TeamBTextBox.Text;
@@ -82,17 +83,14 @@ namespace Summer_Games_2K16
                 newGame.PLAYED_ON = Convert.ToDateTime(PlayedOnTextBox.Text);
                 newGame.WINNER = WinnerTextBox.Text;
 
-                if (GameID == 0)
+                if (GAMEID == 0)
                 {
                     db.GAMES.Add(newGame);
                 }
 
                 // save our changes - also updates and inserts
                 db.SaveChanges();
-
-   
              Response.Redirect("~/Cricket.aspx");
-
             }
         }
     }
