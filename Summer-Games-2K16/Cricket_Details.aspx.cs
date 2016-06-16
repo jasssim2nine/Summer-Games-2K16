@@ -21,13 +21,17 @@ namespace Summer_Games_2K16
             }
         }
 
-        /// <summary>
-        /// This method connects the database and populates the query. 
-        /// </summary>
-        /// @Param (object) 
-        /// @Param (GetDepartments)
-        /// @returns (void)
 
+
+        /**
+         * 
+         * <summary>
+         * This method gets the cricket data from database
+         * </summary>
+         * @method GetDepartments
+         * 
+         * @returns {void}      
+         */
         protected void GetCricketData()
         {
             int GameID = Convert.ToInt32(Request.QueryString["GAMEID"]);
@@ -52,45 +56,78 @@ namespace Summer_Games_2K16
             }
         }
 
+        /**          
+        * <summary>
+        * This method takes back to the previous page, cancel
+        * </summary>
+        * @method CancelButton_Click
+        * @param {object} sender
+        * @param {EventArgs} e
+        * @returns {void}      
+        */
         protected void CancelButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Cricket.aspx");
         }
 
+
+        /**          
+         * <summary>
+         * This method saves the operation
+         * </summary>
+         * @method SaveButton_Click
+         * @param {object} sender
+         * @param {EventArgs} e
+         * @returns {void}      
+         */
         protected void SaveButton_Click(object sender, EventArgs e)
         {
+            // Use EF to connect to the server
             using (DefaultConnection db = new DefaultConnection())
             {
+                // use the Student model to create a new student object and
+                // save a new record
                 GAMES newGame = new GAMES();
-                int specs = Convert.ToInt32(SpectatorsTextBox.Text);
-                int GAMEID = 0;
-                if (Request.QueryString.Count > 0)
+
+                int GameID = 0;
+
+                if (Request.QueryString.Count > 0) // our URL has a StudentID in it
                 {
-                    GAMEID = Convert.ToInt32(Request.QueryString["GAMEID"]);
+                    // get the id from the URL
+                    GameID = Convert.ToInt32(Request.QueryString["GameID"]);
 
-                    newGame = (from GAMES in db.GAMES
-                               where GAMES.GAMEID == GAMEID
-                               select GAMES).FirstOrDefault();
-
+                    // get the current student from EF DB
+                    newGame = (from game in db.GAMES
+                               where game.GAMEID == GameID
+                               select game).FirstOrDefault();
                 }
 
+                // add form data to the new student record
                 newGame.DESCRIPTION = DescriptionTextBox.Text;
-                newGame.SPECTATORS = specs;
                 newGame.TEAM_A = TeamATextBox.Text;
-                newGame.TEAM_A_POINTS = Convert.ToInt32(PointATextBox.Text);
                 newGame.TEAM_B = TeamBTextBox.Text;
+                newGame.TEAM_A_POINTS = Convert.ToInt32(PointATextBox.Text);
                 newGame.TEAM_B_POINTS = Convert.ToInt32(PointBTextBox.Text);
-                newGame.PLAYED_ON = Convert.ToDateTime(PlayedOnTextBox.Text);
                 newGame.WINNER = WinnerTextBox.Text;
 
-                if (GAMEID == 0)
+                if (SpectatorsTextBox.Text != "0")
+                    newGame.SPECTATORS = Convert.ToInt32(SpectatorsTextBox.Text);
+                
+                newGame.PLAYED_ON = Convert.ToDateTime(PlayedOnTextBox.Text);
+
+                // use LINQ to ADO.NET to add / insert new student into the database
+
+                if (GameID == 0)
                 {
                     db.GAMES.Add(newGame);
                 }
 
+
                 // save our changes - also updates and inserts
                 db.SaveChanges();
-             Response.Redirect("~/Cricket.aspx");
+
+                // Redirect back to the updated students page
+                Response.Redirect("~/Cricket.aspx");
             }
         }
     }

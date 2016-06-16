@@ -1,5 +1,11 @@
 ﻿<%@ Page Title="Cricket Details" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Cricket_Details.aspx.cs" Inherits="Summer_Games_2K16.Cricket_Details" %>
-
+<%--
+     Author Name : Jasim Khan, Ebin Antoo
+    Student # : 200263011, 200269378
+    Date : 08-JUn-16
+    Version : 1.1
+    Description : A default navbar for all pages.
+ --%>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
    
     <div class="container">
@@ -35,7 +41,7 @@
                 
                 <div class="form-group">
                     <label class="control-label" for="PlayedOnTextBox">Played-On</label>
-                    <asp:TextBox runat="server" TextMode="Date" CssClass="form-control" ID="PlayedOnTextBox" placeholder="Description" required="true"></asp:TextBox>
+                    <asp:TextBox runat="server" CssClass="form-control" TextMode="Date" ID="PlayedOnTextBox" placeholder="Description" required="true"></asp:TextBox>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="WinnerTextBox">Winner</label>
