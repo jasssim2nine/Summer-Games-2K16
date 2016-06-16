@@ -80,8 +80,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\images\baseball.jpg" />
+    <Content Include="Assets\images\basketball.jpg" />
+    <Content Include="Assets\images\cricket.jpg" />
     <Content Include="Assets\images\git_screenshot.JPG" />
     <Content Include="Assets\images\screenshot.JPG" />
+    <Content Include="Assets\images\soccer.jpg" />
     <Content Include="Baseball.aspx" />
     <Content Include="Baseball_Details.aspx" />
     <Content Include="Basketball.aspx" />
@@ -93,6 +97,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\hover-min.css" />
     <Content Include="Cricket.aspx" />
     <Content Include="Cricket_Details.aspx" />
     <Content Include="Default.aspx" />
