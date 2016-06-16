@@ -17,7 +17,7 @@
                            <div class="col-offset-3 text-center">
                                <nav>
                                  <ul class="pager">
-                                   <li><a href="#">PREVIOUS WEEK</a></li>
+                                   <li><a href="#" style="float:left;clear:both">PREVIOUS WEEK</a></li>
                                    <li><a href="#">NEXT WEEK</a></li>
                                  </ul>
                                </nav>
@@ -27,7 +27,7 @@
                 <asp:GridView ID="CricketGridView" AutoGenerateColumns="false"  CssClass="table table-bordered"
                       runat="server">
                     <Columns>
-                         <asp:BoundField DataField="GAMEID" HeaderText="GameID" Visible="true"/>
+                         <asp:BoundField DataField="GAMEID" HeaderText="GameID" Visible="false"/>
                         <asp:BoundField DataField="DESCRIPTION" HeaderText="Description" Visible="true"/>
                         <asp:BoundField DataField="SPECTATORS" HeaderText="Spectators" Visible="true"/>
                         <asp:BoundField DataField="TEAM_A" HeaderText="Team A" Visible="true"/>

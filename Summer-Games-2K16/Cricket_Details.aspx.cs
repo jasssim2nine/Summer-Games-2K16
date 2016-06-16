@@ -69,8 +69,6 @@ namespace Summer_Games_2K16
         {
             Response.Redirect("~/Cricket.aspx");
         }
-
-
         /**          
          * <summary>
          * This method saves the operation
