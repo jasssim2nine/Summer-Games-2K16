@@ -23,15 +23,17 @@
         <div class="collapse navbar-collapse game-name-nav" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li class="hidden-xs hidden-sm"><a href="#">|</a></li>
-                <li class="hvr-underline-from-center"><a href="../Soccer.aspx">SOCCER</a></li>
-                <li class="hvr-underline-from-center"><a href="Cricket.aspx">CRICKET</a></li>
-                <li class="hvr-underline-from-center"><a href="Baseball.aspx">BASEBALL</a></li>
-                <li class="hvr-underline-from-center"><a href="Basketball.aspx">BASKETBALL</a></li>                
+                <li class="hvr-underline-from-center"><a href="/Soccer.aspx">SOCCER</a></li>
+                <li class="hvr-underline-from-center"><a href="/Cricket.aspx">CRICKET</a></li>
+                <li class="hvr-underline-from-center"><a href="/Baseball.aspx">BASEBALL</a></li>
+                <li class="hvr-underline-from-center"><a href="/Basketball.aspx">BASKETBALL</a></li>                
             </ul>
             
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/docs/">DOCS</a></li>
-                <li><a href="/login.aspx">ADMIN</a></li>
+                <li><a href="/docs/"><i class="fa fa-file-text-o" aria-hidden="true"></i> DOCS</a></li>
+                <li><a href="/Login.aspx/"><i class="fa fa-sign-in" aria-hidden="true"></i> LOGIN</a></li>
+                <li><a href="/Register.aspx/"><i class="fa fa-user-plus" aria-hidden="true"></i> REGISTER</a></li>
+                <li><a href="/Contact.aspx"><i class="fa fa-phone" aria-hidden="true"></i> CONTACT</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

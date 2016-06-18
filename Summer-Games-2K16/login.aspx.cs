@@ -13,5 +13,10 @@ namespace Summer_Games_2K16
         {
 
         }
+
+        protected void LoginButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

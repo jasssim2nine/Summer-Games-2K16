@@ -114,7 +114,7 @@
     <Content Include="Assets\images\history-clock-button.png" />
     <Content Include="Assets\images\photo-camera.png" />
     <Content Include="Assets\images\wireframe.png" />
-    <Content Include="login.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Models\GameTracker.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>GameTracker.edmx</DependentUpon>
@@ -148,6 +148,7 @@
       <DependentUpon>GameTracker.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
+    <Content Include="Register.aspx" />
     <Content Include="Scripts\App.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -225,12 +226,12 @@
     <Compile Include="FrontEnd.Master.designer.cs">
       <DependentUpon>FrontEnd.Master</DependentUpon>
     </Compile>
-    <Compile Include="login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\Cours.cs">
       <DependentUpon>GameTracker.tt</DependentUpon>
@@ -263,6 +264,13 @@
       <DependentUpon>GameTracker.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Soccer.aspx.cs">
       <DependentUpon>Soccer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
