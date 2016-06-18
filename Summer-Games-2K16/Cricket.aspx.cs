@@ -47,5 +47,32 @@ namespace Summer_Games_2K16
             }
         }
 
+        protected void CricketGridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+
+            //store the row which is clicked
+            int selectedRow = e.RowIndex;
+
+            //get the selected department id using department datakey 
+            int GAMEID = Convert.ToInt32(CricketGridView.DataKeys[selectedRow].Values["GAMEID"]);
+            // using ef to find the selected department 
+            using (DefaultConnection db = new DefaultConnection())
+            {
+                //create object of department class and store the query
+                GAMES deletedCricketRow = (from cricrecords in db.GAMES
+                                                where cricrecords.GAMEID == GAMEID
+                                                select cricrecords).FirstOrDefault();
+
+                //remove the selected department from the db
+                db.GAMES.Remove(deletedCricketRow);
+                // save my changes back to the database
+                db.SaveChanges();
+
+                //refresh the grid
+                this.GetCricketData();
+            }
+
+        }
+
     }
 }

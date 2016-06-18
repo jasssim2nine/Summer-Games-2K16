@@ -24,8 +24,11 @@
                            </div>
                        </div><!-- end of row -->
                    </div><!--feed-->
-                <asp:GridView ID="CricketGridView" AutoGenerateColumns="false"  CssClass="table table-bordered"
-                      runat="server">
+                <!--Paging -->
+                
+
+                <asp:GridView ID="CricketGridView" AutoGenerateColumns="false"  CssClass="table table-bordered table-striped table-hover"
+                    DataKeyNames="GAMEID" OnRowDeleting="CricketGridView_RowDeleting"  runat="server">
                     <Columns>
                          <asp:BoundField DataField="GAMEID" HeaderText="GameID" Visible="false"/>
                         <asp:BoundField DataField="GAMENAME" HeaderText="Game Name" Visible="true"/>
@@ -38,6 +41,8 @@
                         <asp:BoundField DataField="TEAM_A_POINTS" HeaderText="Team A Points" Visible="true"/>
                         <asp:BoundField DataField="TEAM_B_POINTS" HeaderText="Team B Points" Visible="true"/>
                         <asp:BoundField DataField="TOTAL_POINTS" HeaderText="Total Points" Visible="true"/>
+                         <asp:CommandField HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'/>Delete"
+                              ShowDeleteButton="true" ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
                     </Columns>
                     
                 </asp:GridView>
