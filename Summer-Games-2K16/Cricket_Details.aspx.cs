@@ -44,6 +44,7 @@ namespace Summer_Games_2K16
 
                 if(updatedrecord != null)
                 {
+                    GameNameTextBox.Text = updatedrecord.GAMENAME;
                     DescriptionTextBox.Text = updatedrecord.DESCRIPTION;
                     SpectatorsTextBox.Text = updatedrecord.SPECTATORS.ToString();
                     TeamATextBox.Text = updatedrecord.TEAM_A;
@@ -52,6 +53,7 @@ namespace Summer_Games_2K16
                     PointBTextBox.Text = updatedrecord.TEAM_B_POINTS.ToString();
                     PlayedOnTextBox.Text = updatedrecord.PLAYED_ON.ToString();
                     WinnerTextBox.Text = updatedrecord.WINNER;
+                    TotalPointsTextBox.Text = updatedrecord.TOTAL_POINTS.ToString();
                 }
             }
         }
@@ -101,15 +103,17 @@ namespace Summer_Games_2K16
                 }
 
                 // add form data to the new student record
+                newGame.GAMENAME = GameNameTextBox.Text;
                 newGame.DESCRIPTION = DescriptionTextBox.Text;
                 newGame.TEAM_A = TeamATextBox.Text;
                 newGame.TEAM_B = TeamBTextBox.Text;
                 newGame.TEAM_A_POINTS = Convert.ToInt32(PointATextBox.Text);
                 newGame.TEAM_B_POINTS = Convert.ToInt32(PointBTextBox.Text);
                 newGame.WINNER = WinnerTextBox.Text;
+                newGame.TOTAL_POINTS = Convert.ToInt32(TotalPointsTextBox.Text);
 
-                
-                    newGame.SPECTATORS = Convert.ToInt32(SpectatorsTextBox.Text);
+
+                newGame.SPECTATORS = Convert.ToInt32(SpectatorsTextBox.Text);
                 
                 newGame.PLAYED_ON = Convert.ToDateTime(PlayedOnTextBox.Text);
 

@@ -23,5 +23,7 @@ namespace Summer_Games_2K16.Models
         public string WINNER { get; set; }
         public int TEAM_A_POINTS { get; set; }
         public int TEAM_B_POINTS { get; set; }
+        public string GAMENAME { get; set; }
+        public Nullable<int> TOTAL_POINTS { get; set; }
     }
 }

@@ -13,6 +13,15 @@ namespace Summer_Games_2K16 {
     public partial class Cricket_Details {
         
         /// <summary>
+        /// GameNameTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox GameNameTextBox;
+        
+        /// <summary>
         /// DescriptionTextBox control.
         /// </summary>
         /// <remarks>
@@ -83,6 +92,15 @@ namespace Summer_Games_2K16 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox WinnerTextBox;
+        
+        /// <summary>
+        /// TotalPointsTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TotalPointsTextBox;
         
         /// <summary>
         /// CancelButton control.

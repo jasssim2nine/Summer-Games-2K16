@@ -44,6 +44,8 @@
           <Property Name="WINNER" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="TEAM_A_POINTS" Type="int" Nullable="false" />
           <Property Name="TEAM_B_POINTS" Type="int" Nullable="false" />
+          <Property Name="GAMENAME" Type="varchar" MaxLength="20" />
+          <Property Name="TOTAL_POINTS" Type="int" />
         </EntityType>
         <EntityType Name="Students">
           <Key>
@@ -167,6 +169,8 @@
           <Property Name="WINNER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="TEAM_A_POINTS" Type="Int32" Nullable="false" />
           <Property Name="TEAM_B_POINTS" Type="Int32" Nullable="false" />
+          <Property Name="GAMENAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TOTAL_POINTS" Type="Int32" />
         </EntityType>
         <Association Name="FK_Courses_DepartmentID">
           <End Role="Departments" Type="Self.Department" Multiplicity="1" />
@@ -271,6 +275,8 @@
           <EntitySetMapping Name="GAMES">
             <EntityTypeMapping TypeName="GameTrackerModel.GAMES">
               <MappingFragment StoreEntitySet="GAMES">
+                <ScalarProperty Name="TOTAL_POINTS" ColumnName="TOTAL_POINTS" />
+                <ScalarProperty Name="GAMENAME" ColumnName="GAMENAME" />
                 <ScalarProperty Name="GAMEID" ColumnName="GAMEID" />
                 <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
                 <ScalarProperty Name="SPECTATORS" ColumnName="SPECTATORS" />
