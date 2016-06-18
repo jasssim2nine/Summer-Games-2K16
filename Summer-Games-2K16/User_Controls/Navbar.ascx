@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse game-name-nav" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li class="hidden-xs hidden-sm"><a href="#">|</a></li>
-                <li class="hvr-underline-from-center"><a href="../Soccer.aspx">SOCCER</a></li>
+                <li class="hvr-underline-from-center"><a href="Soccer.aspx">SOCCER</a></li>
                 <li class="hvr-underline-from-center"><a href="Cricket.aspx">CRICKET</a></li>
                 <li class="hvr-underline-from-center"><a href="Baseball.aspx">BASEBALL</a></li>
                 <li class="hvr-underline-from-center"><a href="Basketball.aspx">BASKETBALL</a></li>                

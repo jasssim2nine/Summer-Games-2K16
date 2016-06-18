@@ -16,8 +16,10 @@ namespace Summer_Games_2K16
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            CricketGridView.PageSize = Convert.ToInt32(PageSizeDropDownList.SelectedValue);
+
             //if page loads the first time,populate cricket grid.
-            if(!IsPostBack)
+            if (!IsPostBack)
             {
                 //get cricket table/data
                 this.GetCricketData();
@@ -36,11 +38,13 @@ namespace Summer_Games_2K16
          */
         protected void GetCricketData()
         {
+            var cricketVariable = "Cricket";
             //connect to EF
             using (DefaultConnection db = new DefaultConnection())
             {
+                
                 var cricketQuery = (from allGames in db.GAMES
-                                    
+                                    where allGames.GAMENAME== cricketVariable
                                     select allGames);
             
                 CricketGridView.DataSource = cricketQuery.ToList();
@@ -52,17 +56,17 @@ namespace Summer_Games_2K16
         {
 
             //store the row which is clicked
-            int selectedGame = e.RowIndex;
+            int selectedCricketGame = e.RowIndex;
 
             //get the selected game id using cricket datakey 
-            int GAMEID = Convert.ToInt32(CricketGridView.DataKeys[selectedGame].Values["GAMEID"]);
+            int GAMEID = Convert.ToInt32(CricketGridView.DataKeys[selectedCricketGame].Values["GAMEID"]);
             // using ef to find the selected cricket game. 
             using (DefaultConnection db = new DefaultConnection())
             {
                 //create object of games class and store the query
-                GAMES deletedCricketGame = (from cricrecords in db.GAMES
-                                                where cricrecords.GAMEID == GAMEID
-                                                select cricrecords).FirstOrDefault();
+                GAMES deletedCricketGame = (from cricketrecords in db.GAMES
+                                                where cricketrecords.GAMEID == GAMEID
+                                                select cricketrecords).FirstOrDefault();
 
                 //remove the selected cricket game from the db
                 db.GAMES.Remove(deletedCricketGame);

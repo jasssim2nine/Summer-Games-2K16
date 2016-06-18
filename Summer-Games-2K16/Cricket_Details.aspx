@@ -15,8 +15,15 @@
                 <h5>all fields required</h5>
                  <br />
                 <div class="form-group">
-                    <label class="control-label" for="GameNameTextBox">Game Name</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="GameNameTextBox" placeholder="Game Name" ></asp:TextBox>
+                    <label class="control-label" for="GameNameTextBox">Game Name </label>
+                   <asp:DropDownList ID="GameNameDropDownList" runat="server"
+                     AutoPostBack="true" CssClass="btn btn-default btn-sm dropdown-toggle"
+                     OnSelectedIndexChanged="GameNameDropDownList_SelectedIndexChanged">
+                   <asp:ListItem Text="Soccer" Value="soccer"></asp:ListItem>
+                   <asp:ListItem Text="Cricket" Value="cricket"></asp:ListItem>
+                    <asp:ListItem Text="Baseball" Value="baseball"></asp:ListItem>
+                       <asp:ListItem Text="Basketball" Value="basketball"></asp:ListItem>
+               </asp:DropDownList>
                 </div>
                  <div class="form-group">
                     <label class="control-label" for="DescriptionTextBox">Description</label>
@@ -63,9 +70,5 @@
 
             </div>
         </div><!-- end of row -->
-    </div><!-- end of container-->
-    
-      
-
-                   
+    </div><!-- end of container-->             
 </asp:Content>
