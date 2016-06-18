@@ -25,10 +25,20 @@
                        </div><!-- end of row -->
                    </div><!--feed-->
                 <!--Paging -->
-                
+                <div>
+                  <label for="PageSizeDropDownList"> Records Per Page: </label>
+                <asp:DropDownList ID="PageSizeDropDownList" runat="server"
+                     AutoPostBack="true" CssClass="btn btn-default btn-sm dropdown-toggle"
+                     OnSelectedIndexChanged="PageSizeDropDownList_SelectedIndexChanged">
+                   <asp:ListItem Text="3" Value="3"></asp:ListItem>
+                   <asp:ListItem Text="6" Value="6"></asp:ListItem>
+                    <asp:ListItem Text="All" Value="1000"></asp:ListItem>
+               </asp:DropDownList>
+                  </div>
 
                 <asp:GridView ID="CricketGridView" AutoGenerateColumns="false"  CssClass="table table-bordered table-striped table-hover"
-                    DataKeyNames="GAMEID" OnRowDeleting="CricketGridView_RowDeleting"  runat="server">
+                    DataKeyNames="GAMEID" OnRowDeleting="CricketGridView_RowDeleting" AllowPaging="true"
+                     PageSize="4" OnPageIndexChanging="CricketGridView_PageIndexChanging" PagerStyle-CssClass="pagination-ys"  runat="server">
                     <Columns>
                          <asp:BoundField DataField="GAMEID" HeaderText="GameID" Visible="false"/>
                         <asp:BoundField DataField="GAMENAME" HeaderText="Game Name" Visible="true"/>
@@ -41,6 +51,9 @@
                         <asp:BoundField DataField="TEAM_A_POINTS" HeaderText="Team A Points" Visible="true"/>
                         <asp:BoundField DataField="TEAM_B_POINTS" HeaderText="Team B Points" Visible="true"/>
                         <asp:BoundField DataField="TOTAL_POINTS" HeaderText="Total Points" Visible="true"/>
+                        <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'/> Edit"
+                                navigateurl="~/Cricket_Details.aspx" ControlStyle-CssClass="btn btn-primary btn-sm" runat="server" 
+                                DataNavigateUrlFields="GAMEID"   DataNavigateUrlFormatString="Cricket_Details.aspx?GameID={0}"  />
                          <asp:CommandField HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'/>Delete"
                               ShowDeleteButton="true" ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
                     </Columns>

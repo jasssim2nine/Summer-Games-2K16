@@ -40,8 +40,9 @@ namespace Summer_Games_2K16
             using (DefaultConnection db = new DefaultConnection())
             {
                 var cricketQuery = (from allGames in db.GAMES
+                                    
                                     select allGames);
-
+            
                 CricketGridView.DataSource = cricketQuery.ToList();
                 CricketGridView.DataBind();
             }
@@ -51,20 +52,20 @@ namespace Summer_Games_2K16
         {
 
             //store the row which is clicked
-            int selectedRow = e.RowIndex;
+            int selectedGame = e.RowIndex;
 
-            //get the selected department id using department datakey 
-            int GAMEID = Convert.ToInt32(CricketGridView.DataKeys[selectedRow].Values["GAMEID"]);
-            // using ef to find the selected department 
+            //get the selected game id using cricket datakey 
+            int GAMEID = Convert.ToInt32(CricketGridView.DataKeys[selectedGame].Values["GAMEID"]);
+            // using ef to find the selected cricket game. 
             using (DefaultConnection db = new DefaultConnection())
             {
-                //create object of department class and store the query
-                GAMES deletedCricketRow = (from cricrecords in db.GAMES
+                //create object of games class and store the query
+                GAMES deletedCricketGame = (from cricrecords in db.GAMES
                                                 where cricrecords.GAMEID == GAMEID
                                                 select cricrecords).FirstOrDefault();
 
-                //remove the selected department from the db
-                db.GAMES.Remove(deletedCricketRow);
+                //remove the selected cricket game from the db
+                db.GAMES.Remove(deletedCricketGame);
                 // save my changes back to the database
                 db.SaveChanges();
 
@@ -73,6 +74,21 @@ namespace Summer_Games_2K16
             }
 
         }
+        protected void CricketGridView_PageIndexChanging(object sender,GridViewPageEventArgs e)
+        {
+            //set the new page number
+            CricketGridView.PageIndex = e.NewPageIndex;
 
+            //refresh the grid
+            this.GetCricketData();
+        }
+
+        protected void PageSizeDropDownList_SelectedIndexChanged(object sender,EventArgs e)
+        {
+            //set the page size
+            CricketGridView.PageSize = Convert.ToInt32(PageSizeDropDownList.SelectedValue);
+            //refresh the grid
+            this.GetCricketData();
+        }
     }
 }
