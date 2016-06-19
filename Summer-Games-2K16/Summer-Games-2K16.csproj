@@ -90,6 +90,7 @@
     <Content Include="Baseball_Details.aspx" />
     <Content Include="Basketball.aspx" />
     <Content Include="Basketball_Details.aspx" />
+    <Content Include="Contact.aspx" />
     <Content Include="Content\App.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -102,6 +103,32 @@
     <Content Include="Cricket_Details.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="docs\index.html" />
+    <Content Include="favicon\android-icon-144x144.png" />
+    <Content Include="favicon\android-icon-192x192.png" />
+    <Content Include="favicon\android-icon-36x36.png" />
+    <Content Include="favicon\android-icon-48x48.png" />
+    <Content Include="favicon\android-icon-72x72.png" />
+    <Content Include="favicon\android-icon-96x96.png" />
+    <Content Include="favicon\apple-icon-114x114.png" />
+    <Content Include="favicon\apple-icon-120x120.png" />
+    <Content Include="favicon\apple-icon-144x144.png" />
+    <Content Include="favicon\apple-icon-152x152.png" />
+    <Content Include="favicon\apple-icon-180x180.png" />
+    <Content Include="favicon\apple-icon-57x57.png" />
+    <Content Include="favicon\apple-icon-60x60.png" />
+    <Content Include="favicon\apple-icon-72x72.png" />
+    <Content Include="favicon\apple-icon-76x76.png" />
+    <Content Include="favicon\apple-icon-precomposed.png" />
+    <Content Include="favicon\apple-icon.png" />
+    <Content Include="favicon\browserconfig.xml" />
+    <Content Include="favicon\favicon-16x16.png" />
+    <Content Include="favicon\favicon-32x32.png" />
+    <Content Include="favicon\favicon-96x96.png" />
+    <Content Include="favicon\favicon.ico" />
+    <Content Include="favicon\ms-icon-144x144.png" />
+    <Content Include="favicon\ms-icon-150x150.png" />
+    <Content Include="favicon\ms-icon-310x310.png" />
+    <Content Include="favicon\ms-icon-70x70.png" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Assets\images\browser.png" />
@@ -147,6 +174,7 @@
     <Content Include="Models\GameTracker.edmx.diagram">
       <DependentUpon>GameTracker.edmx</DependentUpon>
     </Content>
+    <Content Include="favicon\manifest.json" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Register.aspx" />
     <Content Include="Scripts\App.js" />
@@ -197,6 +225,13 @@
     </Compile>
     <Compile Include="Basketball_Details.aspx.designer.cs">
       <DependentUpon>Basketball_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Cricket.aspx.cs">
       <DependentUpon>Cricket.aspx</DependentUpon>
