@@ -44,7 +44,7 @@ namespace Summer_Games_2K16
 
                 if(updatedrecord != null)
                 {
-                    GameNameTextBox.Text = updatedrecord.GAMENAME;
+                   GameNameDropDownList.Text = updatedrecord.GAMENAME;
                     DescriptionTextBox.Text = updatedrecord.DESCRIPTION;
                     SpectatorsTextBox.Text = updatedrecord.SPECTATORS.ToString();
                     TeamATextBox.Text = updatedrecord.TEAM_A;
@@ -85,52 +85,65 @@ namespace Summer_Games_2K16
             // Use EF to connect to the server
             using (DefaultConnection db = new DefaultConnection())
             {
-                // use the Student model to create a new student object and
+                // use the Game Tracker model to create a new cricket game object and
                 // save a new record
-                GAMES newGame = new GAMES();
+                GAMES newCricketGame = new GAMES();
 
                 int GameID = 0;
 
-                if (Request.QueryString.Count > 0) // our URL has a StudentID in it
+                if (Request.QueryString.Count > 0) // our URL has a GameID in it
                 {
                     // get the id from the URL
                     GameID = Convert.ToInt32(Request.QueryString["GameID"]);
 
-                    // get the current student from EF DB
-                    newGame = (from game in db.GAMES
+                    // get the current cricket game from EF DB
+                    newCricketGame = (from game in db.GAMES
                                where game.GAMEID == GameID
                                select game).FirstOrDefault();
                 }
 
-                // add form data to the new student record
-                newGame.GAMENAME = GameNameTextBox.Text;
-                newGame.DESCRIPTION = DescriptionTextBox.Text;
-                newGame.TEAM_A = TeamATextBox.Text;
-                newGame.TEAM_B = TeamBTextBox.Text;
-                newGame.TEAM_A_POINTS = Convert.ToInt32(PointATextBox.Text);
-                newGame.TEAM_B_POINTS = Convert.ToInt32(PointBTextBox.Text);
-                newGame.WINNER = WinnerTextBox.Text;
-                newGame.TOTAL_POINTS = Convert.ToInt32(TotalPointsTextBox.Text);
+                // add form data to the new cricket game record
+                newCricketGame.GAMENAME = GameNameDropDownList.Text;
+                newCricketGame.DESCRIPTION = DescriptionTextBox.Text;
+                newCricketGame.TEAM_A = TeamATextBox.Text;
+                newCricketGame.TEAM_B = TeamBTextBox.Text;
+                newCricketGame.TEAM_A_POINTS = Convert.ToInt32(PointATextBox.Text);
+                newCricketGame.TEAM_B_POINTS = Convert.ToInt32(PointBTextBox.Text);
+                newCricketGame.WINNER = WinnerTextBox.Text;
+                newCricketGame.TOTAL_POINTS = Convert.ToInt32(TotalPointsTextBox.Text);
 
 
-                newGame.SPECTATORS = Convert.ToInt32(SpectatorsTextBox.Text);
-                
-                newGame.PLAYED_ON = Convert.ToDateTime(PlayedOnTextBox.Text);
+                newCricketGame.SPECTATORS = Convert.ToInt32(SpectatorsTextBox.Text);
 
-                // use LINQ to ADO.NET to add / insert new student into the database
+                newCricketGame.PLAYED_ON = Convert.ToDateTime(PlayedOnTextBox.Text);
+
+                // use LINQ to ADO.NET to add / insert new cricket game into the database
 
                 if (GameID == 0)
                 {
-                    db.GAMES.Add(newGame);
+                    db.GAMES.Add(newCricketGame);
                 }
 
 
                 // save our changes - also updates and inserts
                 db.SaveChanges();
 
-                // Redirect back to the updated students page
+                // Redirect back to the updated cricket page
                 Response.Redirect("~/Cricket.aspx");
             }
+        }
+        /**          
+        * <summary>
+        * This method sets the selected game
+        * </summary>
+        * @method GameNameDropDownList_SelectedIndexChanged
+        * @param {object} sender
+        * @param {EventArgs} e
+        * @returns {null}      
+        */
+        protected void GameNameDropDownList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
