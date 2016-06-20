@@ -3,7 +3,7 @@
      Author Name : Jasim Khan, Ebin Antoo
     Student # : 200263011, 200269378
     Date : 08-JUn-16
-    Version : 1.1
+    Version : 2.1
     Description : A default navbar for all pages.
  -->
 
@@ -23,18 +23,27 @@
         <div class="collapse navbar-collapse game-name-nav" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li class="hidden-xs hidden-sm"><a href="#">|</a></li>
-                <li class="hvr-underline-from-center" id="soccer" runat="server"><a href="/Games/Soccer.aspx">SOCCER</a></li>
-                <li class="hvr-underline-from-center" id="cricket" runat="server"><a href="/Games/Cricket.aspx">CRICKET</a></li>
-                <li class="hvr-underline-from-center" id="baseball" runat="server"><a href="/Games/Baseball.aspx">BASEBALL</a></li>
-                <li class="hvr-underline-from-center" id="basketball" runat="server"><a href="/Games/Basketball.aspx">BASKETBALL</a></li>                
+                <asp:PlaceHolder ID="GamesPlaceHolder" runat="server">
+                    <li class="hvr-underline-from-center" id="soccer" runat="server"><a href="/Games/Soccer.aspx">SOCCER</a></li>
+                    <li class="hvr-underline-from-center" id="cricket" runat="server"><a href="/Games/Cricket.aspx">CRICKET</a></li>
+                    <li class="hvr-underline-from-center" id="baseball" runat="server"><a href="/Games/Baseball.aspx">BASEBALL</a></li>
+                    <li class="hvr-underline-from-center" id="basketball" runat="server"><a href="/Games/Basketball.aspx">BASKETBALL</a></li>                
+                </asp:PlaceHolder>
             </ul>
             
             <ul class="nav navbar-nav navbar-right">
-                <li class="hvr-underline-from-center" id="docs" runat="server"><a href="/docs/"><i class="fa fa-file-text-o" aria-hidden="true"></i> DOCS</a></li>
-                <li class="hvr-underline-from-center" id="login" runat="server"><a href="/Login.aspx/"><i class="fa fa-sign-in" aria-hidden="true"></i> LOGIN</a></li>
-                <li class="hvr-underline-from-center" id="register" runat="server"><a href="/Register.aspx/"><i class="fa fa-user-plus" aria-hidden="true"></i> REGISTER</a></li>
+                <asp:PlaceHolder ID="DocsPlaceHolder" runat="server">
+                    <li class="hvr-underline-from-center" id="docs" runat="server"><a href="/docs/"><i class="fa fa-file-text-o" aria-hidden="true"></i> DOCS</a></li>
+                </asp:PlaceHolder>   
 
-                <li class="hvr-underline-from-center" id="logout" runat="server"><a href="/Logout.aspx/"><i class="fa fa-sign-out" aria-hidden="true"></i> LOGOUT</a></li>
+                <asp:PlaceHolder ID="PublicPlaceHolder" runat="server">
+                    <li class="hvr-underline-from-center" id="login" runat="server"><a href="/Login.aspx/"><i class="fa fa-sign-in" aria-hidden="true"></i> LOGIN</a></li>
+                    <li class="hvr-underline-from-center" id="register" runat="server"><a href="/Register.aspx/"><i class="fa fa-user-plus" aria-hidden="true"></i> REGISTER</a></li>
+                </asp:PlaceHolder>
+                
+                <asp:PlaceHolder ID="LogOutPlaceHolder" runat="server">
+                    <li class="hvr-underline-from-center" id="logout" runat="server"><a href="/Logout.aspx/"><i class="fa fa-sign-out" aria-hidden="true"></i> LOGOUT</a></li>                    
+                </asp:PlaceHolder>                    
 
                 <li class="hvr-underline-from-center" id="contact" runat="server"><a href="/Contact.aspx"><i class="fa fa-phone" aria-hidden="true"></i> GET IN TOUCH!</a></li>
             </ul>

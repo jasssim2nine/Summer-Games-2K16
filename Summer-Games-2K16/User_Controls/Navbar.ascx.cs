@@ -5,13 +5,46 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+// required  for identity and owin security
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.Owin.Security;
+
+/**
+ * @author : Jasim Khan, Ebin Antoo
+ * Student # : 200263011, 200269378
+ * @date : 08-JUn-16
+ * @Version : 2.1
+ * Description : Nav page
+ */
 namespace Summer_Games_2K16.User_Controls
 {
     public partial class Navbar : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SetActivePage();
+            if(!IsPostBack)
+            {
+                //check if user logged in
+                if(HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+                    //show secured navlinks
+                    GamesPlaceHolder.Visible = true;
+                    DocsPlaceHolder.Visible = true;
+                    PublicPlaceHolder.Visible = false;
+                    LogOutPlaceHolder.Visible = true;
+                }
+                else
+                {
+                    //only show public links
+                    GamesPlaceHolder.Visible = false;
+                    PublicPlaceHolder.Visible = true;
+                    DocsPlaceHolder.Visible = true;
+                    LogOutPlaceHolder.Visible = false;
+                }
+                SetActivePage();
+            }
+            
         }
 
         /**

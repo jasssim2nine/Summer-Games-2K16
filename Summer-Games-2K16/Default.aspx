@@ -5,7 +5,7 @@
     Author Name : Jasim Khan, Ebin Antoo
     Student # : 200263011, 200269378
     Date : 08-JUn-16
-    Version : 1.1
+    Version : 2.1
     Description : A default page to display the game tracking table and a main game.
     -->
     <div class="home-header">
