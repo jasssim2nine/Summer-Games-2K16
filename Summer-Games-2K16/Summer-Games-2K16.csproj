@@ -126,11 +126,8 @@
     <Content Include="Assets\images\git_screenshot.JPG" />
     <Content Include="Assets\images\screenshot.JPG" />
     <Content Include="Assets\images\soccer.jpg" />
-    <Content Include="Games\Cricket_Details.aspx" />
     <Content Include="Games\Baseball.aspx" />
-    <Content Include="Games\Baseball_Details.aspx" />
     <Content Include="Games\Basketball.aspx" />
-    <Content Include="Games\Basketball_Details.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\App.css" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -232,19 +229,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Games\Soccer.aspx" />
-    <Content Include="Games\Soccer_Details.aspx" />
     <Content Include="User_Controls\Footer.ascx" />
     <Content Include="User_Controls\Navbar.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Games\Cricket_Details.aspx.cs">
-      <DependentUpon>Cricket_Details.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Games\Cricket_Details.aspx.designer.cs">
-      <DependentUpon>Cricket_Details.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Games\Baseball.aspx.cs">
       <DependentUpon>Baseball.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -252,26 +241,12 @@
     <Compile Include="Games\Baseball.aspx.designer.cs">
       <DependentUpon>Baseball.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Games\Baseball_Details.aspx.cs">
-      <DependentUpon>Baseball_Details.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Games\Baseball_Details.aspx.designer.cs">
-      <DependentUpon>Baseball_Details.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Games\Basketball.aspx.cs">
       <DependentUpon>Basketball.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Games\Basketball.aspx.designer.cs">
       <DependentUpon>Basketball.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Games\Basketball_Details.aspx.cs">
-      <DependentUpon>Basketball_Details.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Games\Basketball_Details.aspx.designer.cs">
-      <DependentUpon>Basketball_Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -366,13 +341,6 @@
     </Compile>
     <Compile Include="Games\Soccer.aspx.designer.cs">
       <DependentUpon>Soccer.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Games\Soccer_Details.aspx.cs">
-      <DependentUpon>Soccer_Details.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Games\Soccer_Details.aspx.designer.cs">
-      <DependentUpon>Soccer_Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="User_Controls\Footer.ascx.cs">
