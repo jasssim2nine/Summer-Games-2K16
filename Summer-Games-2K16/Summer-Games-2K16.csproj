@@ -126,6 +126,7 @@
     <Content Include="Assets\images\git_screenshot.JPG" />
     <Content Include="Assets\images\screenshot.JPG" />
     <Content Include="Assets\images\soccer.jpg" />
+    <Content Include="Games\Cricket_Details.aspx" />
     <Content Include="Games\Baseball.aspx" />
     <Content Include="Games\Baseball_Details.aspx" />
     <Content Include="Games\Basketball.aspx" />
@@ -140,7 +141,6 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\hover-min.css" />
     <Content Include="Games\Cricket.aspx" />
-    <Content Include="Games\Cricket_Details.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="docs\index.html" />
     <Content Include="favicon\android-icon-144x144.png" />
@@ -238,6 +238,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Games\Cricket_Details.aspx.cs">
+      <DependentUpon>Cricket_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Games\Cricket_Details.aspx.designer.cs">
+      <DependentUpon>Cricket_Details.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Games\Baseball.aspx.cs">
       <DependentUpon>Baseball.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -279,13 +286,6 @@
     </Compile>
     <Compile Include="Games\Cricket.aspx.designer.cs">
       <DependentUpon>Cricket.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Games\Cricket_Details.aspx.cs">
-      <DependentUpon>Cricket_Details.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Games\Cricket_Details.aspx.designer.cs">
-      <DependentUpon>Cricket_Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
