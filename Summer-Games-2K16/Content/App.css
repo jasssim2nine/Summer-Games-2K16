@@ -166,100 +166,241 @@ footer{
     margin-bottom: 0;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
+
+
+/**register page*/
+*:focus {
+  outline: none;
+}
+
+#login-box {
   position: relative;
-  min-height: 100%;
+  margin: 5% auto;
+  width: 600px;
+  height: 400px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 80px;
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
 }
-.footer {
+
+.input{
+    display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+
+.input:focus {
+  border-bottom: 2px solid #03A9F4;
+  color: #03A9F4;
+  transition: 0.2s ease;
+}
+
+
+
+
+.or {
+  position: absolute;
+  top: 39%;
+  left: 49%;
+  width: 40px;
+  height: 40px;
+  background: #DDD;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  line-height: 40px;
+  text-align: center;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+  background: url('https://goo.gl/YbktSj');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 2px 2px 0;
+}
+
+.right .loginwith {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #FFF;
+  text-align: center;
+}
+
+button.social-signin {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+button.social-signin:hover,
+button.social-signin:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin.facebook {
+  background: #32508E;
+}
+
+button.social-signin.twitter {
+  background: #55ACEE;
+}
+
+button.social-signin.google {
+  background: #DD4B39;
+}
+
+/**login*/
+  .form-box{
+  background: #fff;
+  margin: 30px auto;
+  max-width: 500px;
+  box-shadow: 0 3px 6px 0px rgba(0,0,0,0.16), 0 3px 6px 0px rgba(0,0,0,0.23);
+}
+form#login-form {
+  overflow: hidden;
+  position: relative;
+  padding: 40px;
+}
+.head {
+  color: #fff;
+  font-size: 34px;
+  font-weight: normal;
+  padding: 50px 0;
+  text-align: center;
+  text-transform: uppercase;
+  background: #6498fe;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+ 
+.form-group .label-control {
+  color: #888;
+  display: block;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  width: 100%;
+  pointer-events: none;
+  height: 100%; 
+}
+.form-group .label-control::before,
+.form-group .label-control::after{
+  content: "";
+  left: 0;
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
 }
-​
+.form-group .label-control::before{
+  border-bottom: 1px solid #B9C1CA;
+  transition: transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+}
+ 
+.form-group .label-control::after {
+  border-bottom: 2px solid #03A9F4;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+ 
+.form-control {
+  border: none;
+  border-radius: 0;
+  margin-top: 20px;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 14px;
+}
 
-
-
-
-
-
-
-​
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-​
-.container .text-muted {
-  margin: 20px 0;
+.active .label-control::after{
+   -webkit-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
 }
-​
-​
-/* Pagination Style
--------------------------------------------------- */
-​
-.pagination-ys {
-    /*display: inline-block;*/
-    padding-left: 0;
-    margin: 20px 0;
-    border-radius: 4px;
+.active .label-control .label-text {
+    opacity: 1;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+    color: #03A9F4 !important;
 }
-​
-.pagination-ys table > tbody > tr > td {
-    display: inline;
+ 
+.log-btn,
+.reg_button {
+  background: #6498fe;
+  border:none;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 5px 0;
+  outline: medium none;
+  overflow: hidden;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: all 0.15s ease-in-out 0s;
+  width: 100%;
+  box-shadow: 0 1px 2px 0px rgba(0,0,0,0.16), 0 1px 2px 0px rgba(0,0,0,0.23);
 }
-​
-.pagination-ys table > tbody > tr > td > a,
-.pagination-ys table > tbody > tr > td > span {
-    position: relative;
-    float: left;
-    padding: 8px 12px;
-    line-height: 1.42857143;
-    text-decoration: none;
-    color: #dd4814;
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-    margin-left: -1px;
+.log-btn:hover {
+  background: #4b81eb;
+  box-shadow: 0 2px 4px 0px rgba(0,0,0,0.16), 0 2px 4px 0px rgba(0,0,0,0.23);
 }
-​
-.pagination-ys table > tbody > tr > td > span {
-    position: relative;
-    float: left;
-    padding: 8px 12px;
-    line-height: 1.42857143;
-    text-decoration: none;    
-    margin-left: -1px;
-    z-index: 2;
-    color: #aea79f;
-    background-color: #f5f5f5;
-    border-color: #dddddd;
-    cursor: default;
+.text-p{
+  font-size: 14px;
+  text-align: center;
+  margin: 10px 0;
 }
-​
-.pagination-ys table > tbody > tr > td:first-child > a,
-.pagination-ys table > tbody > tr > td:first-child > span {
-    margin-left: 0;
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px;
-}
-​
-.pagination-ys table > tbody > tr > td:last-child > a,
-.pagination-ys table > tbody > tr > td:last-child > span {
-    border-bottom-right-radius: 4px;
-    border-top-right-radius: 4px;
-}
-​
-.pagination-ys table > tbody > tr > td > a:hover,
-.pagination-ys table > tbody > tr > td > span:hover,
-.pagination-ys table > tbody > tr > td > a:focus,
-.pagination-ys table > tbody > tr > td > span:focus {
-    color: #97310e;
-    background-color: #eeeeee;
-    border-color: #dddddd;
+.text-p a{
+  color: #175690;
 }

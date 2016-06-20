@@ -38,9 +38,3 @@ $(document).scroll(function (e) {
         $('.docs-navbar').removeClass('navbar-fixed-top').addClass('navbar-static-top');
     }
 });
-
-
-$(".savebtn").click(function () {
-    window.location.href = "~/cricket.aspx";
-    console.log("Clicked");
-});
