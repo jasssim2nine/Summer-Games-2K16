@@ -1,22 +1,22 @@
-﻿<%@ Page Title="Soccer Details" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Soccer_Details.aspx.cs" Inherits="Summer_Games_2K16.Soccer_Details" %>
-
+﻿<%@ Page Title="Edit Game" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Edit_Game.aspx.cs" Inherits="Summer_Games_2K16.Cricket_Details" %>
+<%--
+     Author Name : Jasim Khan, Ebin Antoo
+    Student # : 200263011, 200269378
+    Date : 08-JUn-16
+    Version : 1.1
+    Description : A default navbar for all pages.
+ --%>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-     <div class="container">
+   
+    <div class="container">
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
                 <h1>Team Details</h1>
                 <h5>all fields required</h5>
                  <br />
                 <div class="form-group">
-                    <label class="control-label" for="GameNameTextBox">Game Name </label>
-                   <asp:DropDownList ID="GameNameDropDownList" runat="server"
-                     AutoPostBack="true" CssClass="btn btn-default btn-sm dropdown-toggle"
-                     OnSelectedIndexChanged="GameNameDropDownList_SelectedIndexChanged">
-                   <asp:ListItem Text="Soccer" Value="soccer"></asp:ListItem>
-                   <asp:ListItem Text="Cricket" Value="cricket" Enabled="false"></asp:ListItem>
-                    <asp:ListItem Text="Baseball" Value="baseball" Enabled="false"></asp:ListItem>
-                       <asp:ListItem Text="Basketball" Value="basketball" Enabled="false"></asp:ListItem>
-               </asp:DropDownList>
+                    <label class="control-label" for="DescriptionTextBox">Game Name</label>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="GameNameTextBox" placeholder="Game Name" ></asp:TextBox>
                 </div>
                  <div class="form-group">
                     <label class="control-label" for="DescriptionTextBox">Description</label>
@@ -63,5 +63,5 @@
 
             </div>
         </div><!-- end of row -->
-    </div><!-- end of container-->   
+    </div><!-- end of container-->             
 </asp:Content>

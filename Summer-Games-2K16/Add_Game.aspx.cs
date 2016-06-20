@@ -9,18 +9,21 @@ using System.Web.UI.WebControls;
 using Summer_Games_2K16.Models;
 using System.Web.ModelBinding;
 using System.Linq.Dynamic;
+
 namespace Summer_Games_2K16
 {
-    public partial class Cricket_Details : System.Web.UI.Page
+    public partial class Add_Game : System.Web.UI.Page
     {
+        
         protected void Page_Load(object sender, EventArgs e)
         {
-                if((!IsPostBack) && (Request.QueryString.Count >0))
+            if ((!IsPostBack) && (Request.QueryString.Count > 0))
             {
+               
                 this.GetCricketData();
+                
             }
         }
-
 
 
         /**
@@ -36,19 +39,19 @@ namespace Summer_Games_2K16
         {
             int GameID = Convert.ToInt32(Request.QueryString["GAMEID"]);
 
-            using (GameConnection db = new GameConnection())
+            using (DefaultConnection db = new DefaultConnection())
             {
                 GAMES updatedrecord = (from c in db.GAMES
-                                      where c.GAMEID == GameID
-                                      select c).FirstOrDefault();
+                                       where c.GAMEID == GameID
+                                       select c).FirstOrDefault();
 
-                if(updatedrecord != null)
+                if (updatedrecord != null)
                 {
-                   GameNameDropDownList.Text = updatedrecord.GAMENAME;
+                    GameNameDropDownList.Text = updatedrecord.GAMENAME;
                     DescriptionTextBox.Text = updatedrecord.DESCRIPTION;
                     SpectatorsTextBox.Text = updatedrecord.SPECTATORS.ToString();
                     TeamATextBox.Text = updatedrecord.TEAM_A;
-                    PointATextBox.Text = updatedrecord.TEAM_A_POINTS.ToString() ;
+                    PointATextBox.Text = updatedrecord.TEAM_A_POINTS.ToString();
                     TeamBTextBox.Text = updatedrecord.TEAM_B;
                     PointBTextBox.Text = updatedrecord.TEAM_B_POINTS.ToString();
                     PlayedOnTextBox.Text = updatedrecord.PLAYED_ON.ToString();
@@ -69,8 +72,9 @@ namespace Summer_Games_2K16
         */
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Games/Cricket.aspx");
+            
         }
+
         /**          
          * <summary>
          * This method saves the operation
@@ -83,7 +87,7 @@ namespace Summer_Games_2K16
         protected void SaveButton_Click(object sender, EventArgs e)
         {
             // Use EF to connect to the server
-            using (GameConnection db = new GameConnection())
+            using (DefaultConnection db = new DefaultConnection())
             {
                 // use the Game Tracker model to create a new cricket game object and
                 // save a new record
@@ -98,8 +102,8 @@ namespace Summer_Games_2K16
 
                     // get the current cricket game from EF DB
                     newCricketGame = (from game in db.GAMES
-                               where game.GAMEID == GameID
-                               select game).FirstOrDefault();
+                                      where game.GAMEID == GameID
+                                      select game).FirstOrDefault();
                 }
 
                 // add form data to the new cricket game record
@@ -129,7 +133,8 @@ namespace Summer_Games_2K16
                 db.SaveChanges();
 
                 // Redirect back to the updated cricket page
-                Response.Redirect("~/Games/Cricket.aspx");
+            
+
             }
         }
         /**          
@@ -143,7 +148,10 @@ namespace Summer_Games_2K16
         */
         protected void GameNameDropDownList_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+           
         }
+
+
+
     }
 }

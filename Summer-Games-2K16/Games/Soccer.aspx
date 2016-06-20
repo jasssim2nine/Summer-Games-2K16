@@ -48,7 +48,9 @@
                         <asp:BoundField DataField="TEAM_A_POINTS" HeaderText="Team A Points" Visible="true"/>
                         <asp:BoundField DataField="TEAM_B_POINTS" HeaderText="Team B Points" Visible="true"/>
                         <asp:BoundField DataField="TOTAL_POINTS" HeaderText="Total Points" Visible="true"/>
-                        
+                        <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'/> Edit"
+                                navigateurl="~/Soccer_Details.aspx" ControlStyle-CssClass="btn btn-primary btn-sm" runat="server" 
+                                DataNavigateUrlFields="GAMEID"   DataNavigateUrlFormatString="Soccer_Details.aspx?GameID={0}"  />
                          <asp:CommandField HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'/>Delete"
                               ShowDeleteButton="true" ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
                     </Columns>
