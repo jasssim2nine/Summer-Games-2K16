@@ -36,7 +36,7 @@ namespace Summer_Games_2K16
         {
             int GameID = Convert.ToInt32(Request.QueryString["GAMEID"]);
 
-            using (DefaultConnection db = new DefaultConnection())
+            using (GameConnection db = new GameConnection())
             {
                 GAMES updatedrecord = (from c in db.GAMES
                                       where c.GAMEID == GameID
@@ -69,7 +69,7 @@ namespace Summer_Games_2K16
         */
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Cricket.aspx");
+            Response.Redirect("~/Games/Cricket.aspx");
         }
         /**          
          * <summary>
@@ -83,7 +83,7 @@ namespace Summer_Games_2K16
         protected void SaveButton_Click(object sender, EventArgs e)
         {
             // Use EF to connect to the server
-            using (DefaultConnection db = new DefaultConnection())
+            using (GameConnection db = new GameConnection())
             {
                 // use the Game Tracker model to create a new cricket game object and
                 // save a new record
@@ -129,7 +129,7 @@ namespace Summer_Games_2K16
                 db.SaveChanges();
 
                 // Redirect back to the updated cricket page
-                Response.Redirect("~/Cricket.aspx");
+                Response.Redirect("~/Games/Cricket.aspx");
             }
         }
         /**          

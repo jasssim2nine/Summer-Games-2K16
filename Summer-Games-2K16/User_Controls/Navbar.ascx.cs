@@ -24,7 +24,37 @@ namespace Summer_Games_2K16.User_Controls
          */
         private void SetActivePage()
         {
+            switch(Page.Title)
+            {
+                case "Soccer":
+                    soccer.Attributes.Add("class", "nav-bottom");
+                    break;
+                case "Cricket":
+                    cricket.Attributes.Add("class", "nav-bottom");
+                    break;
+                case "Baseball":
+                    baseball.Attributes.Add("class", "nav-bottom");
+                    break;
+                case "Basketball":
+                    basketball.Attributes.Add("class", "nav-bottom");
+                    break;
 
+                case "Docs":
+                    docs.Attributes.Add("class", "nav-bottom");
+                    break;
+                case "Login":
+                    login.Attributes.Add("class", "nav-bottom");
+                    break;
+                case "Register":
+                    register.Attributes.Add("class", "nav-bottom");
+                    break;
+                case "Logout":
+                    logout.Attributes.Add("class", "nav-bottom");
+                    break;
+                case "Get In Touch!":
+                    contact.Attributes.Add("class", "nav-bottom");
+                    break;
+            }
         }
     }
 }

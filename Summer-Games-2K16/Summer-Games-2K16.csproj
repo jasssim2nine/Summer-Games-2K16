@@ -51,11 +51,51 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Linq.Dynamic, Version=1.0.5840.25917, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Linq.Dynamic.1.0.6\lib\net40\System.Linq.Dynamic.dll</HintPath>
       <Private>True</Private>
@@ -86,10 +126,10 @@
     <Content Include="Assets\images\git_screenshot.JPG" />
     <Content Include="Assets\images\screenshot.JPG" />
     <Content Include="Assets\images\soccer.jpg" />
-    <Content Include="Baseball.aspx" />
-    <Content Include="Baseball_Details.aspx" />
-    <Content Include="Basketball.aspx" />
-    <Content Include="Basketball_Details.aspx" />
+    <Content Include="Games\Baseball.aspx" />
+    <Content Include="Games\Baseball_Details.aspx" />
+    <Content Include="Games\Basketball.aspx" />
+    <Content Include="Games\Basketball_Details.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\App.css" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -99,8 +139,8 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\hover-min.css" />
-    <Content Include="Cricket.aspx" />
-    <Content Include="Cricket_Details.aspx" />
+    <Content Include="Games\Cricket.aspx" />
+    <Content Include="Games\Cricket_Details.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="docs\index.html" />
     <Content Include="favicon\android-icon-144x144.png" />
@@ -130,7 +170,6 @@
     <Content Include="favicon\ms-icon-310x310.png" />
     <Content Include="favicon\ms-icon-70x70.png" />
     <Content Include="fonts\fontawesome-webfont.svg" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Assets\images\browser.png" />
     <Content Include="Assets\images\capture.png" />
     <Content Include="Assets\images\commit.JPG" />
@@ -141,7 +180,10 @@
     <Content Include="Assets\images\history-clock-button.png" />
     <Content Include="Assets\images\photo-camera.png" />
     <Content Include="Assets\images\wireframe.png" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Games\MainMenu.aspx" />
     <Content Include="Models\GameTracker.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>GameTracker.edmx</DependentUpon>
@@ -159,14 +201,6 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
     <EntityDeploy Include="Models\GameTracker.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>GameTracker.Designer.cs</LastGenOutput>
@@ -175,11 +209,17 @@
       <DependentUpon>GameTracker.edmx</DependentUpon>
     </Content>
     <Content Include="favicon\manifest.json" />
-    <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Register.aspx" />
     <Content Include="Scripts\App.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
     <Content Include="Scripts\jquery-2.2.3.min.map" />
@@ -191,39 +231,39 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Soccer.aspx" />
-    <Content Include="Soccer_Details.aspx" />
+    <Content Include="Games\Soccer.aspx" />
+    <Content Include="Games\Soccer_Details.aspx" />
     <Content Include="User_Controls\Footer.ascx" />
     <Content Include="User_Controls\Navbar.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Baseball.aspx.cs">
+    <Compile Include="Games\Baseball.aspx.cs">
       <DependentUpon>Baseball.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Baseball.aspx.designer.cs">
+    <Compile Include="Games\Baseball.aspx.designer.cs">
       <DependentUpon>Baseball.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Baseball_Details.aspx.cs">
+    <Compile Include="Games\Baseball_Details.aspx.cs">
       <DependentUpon>Baseball_Details.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Baseball_Details.aspx.designer.cs">
+    <Compile Include="Games\Baseball_Details.aspx.designer.cs">
       <DependentUpon>Baseball_Details.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Basketball.aspx.cs">
+    <Compile Include="Games\Basketball.aspx.cs">
       <DependentUpon>Basketball.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Basketball.aspx.designer.cs">
+    <Compile Include="Games\Basketball.aspx.designer.cs">
       <DependentUpon>Basketball.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Basketball_Details.aspx.cs">
+    <Compile Include="Games\Basketball_Details.aspx.cs">
       <DependentUpon>Basketball_Details.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Basketball_Details.aspx.designer.cs">
+    <Compile Include="Games\Basketball_Details.aspx.designer.cs">
       <DependentUpon>Basketball_Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
@@ -233,18 +273,18 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Cricket.aspx.cs">
+    <Compile Include="Games\Cricket.aspx.cs">
       <DependentUpon>Cricket.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Cricket.aspx.designer.cs">
+    <Compile Include="Games\Cricket.aspx.designer.cs">
       <DependentUpon>Cricket.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Cricket_Details.aspx.cs">
+    <Compile Include="Games\Cricket_Details.aspx.cs">
       <DependentUpon>Cricket_Details.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Cricket_Details.aspx.designer.cs">
+    <Compile Include="Games\Cricket_Details.aspx.designer.cs">
       <DependentUpon>Cricket_Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
@@ -267,6 +307,20 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Games\MainMenu.aspx.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Games\MainMenu.aspx.designer.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\Cours.cs">
       <DependentUpon>GameTracker.tt</DependentUpon>
@@ -306,20 +360,21 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Soccer.aspx.cs">
+    <Compile Include="Games\Soccer.aspx.cs">
       <DependentUpon>Soccer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Soccer.aspx.designer.cs">
+    <Compile Include="Games\Soccer.aspx.designer.cs">
       <DependentUpon>Soccer.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Soccer_Details.aspx.cs">
+    <Compile Include="Games\Soccer_Details.aspx.cs">
       <DependentUpon>Soccer_Details.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Soccer_Details.aspx.designer.cs">
+    <Compile Include="Games\Soccer_Details.aspx.designer.cs">
       <DependentUpon>Soccer_Details.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Startup.cs" />
     <Compile Include="User_Controls\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

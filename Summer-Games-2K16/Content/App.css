@@ -404,3 +404,8 @@ form#login-form {
 .text-p a{
   color: #175690;
 }
+
+/**nav bottom*/
+.nav-bottom{
+    border-bottom: solid red;
+}
