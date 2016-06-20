@@ -10,16 +10,16 @@
 namespace Summer_Games_2K16 {
     
     
-    public partial class Soccer_Details {
+    public partial class Cricket_Details {
         
         /// <summary>
-        /// GameNameDropDownList control.
+        /// GameNameTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList GameNameDropDownList;
+        protected global::System.Web.UI.WebControls.TextBox GameNameTextBox;
         
         /// <summary>
         /// DescriptionTextBox control.

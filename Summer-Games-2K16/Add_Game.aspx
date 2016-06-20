@@ -1,29 +1,26 @@
-﻿<%@ Page Title="Cricket Details" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Cricket_Details.aspx.cs" Inherits="Summer_Games_2K16.Cricket_Details" %>
-<%--
-     Author Name : Jasim Khan, Ebin Antoo
-    Student # : 200263011, 200269378
-    Date : 08-JUn-16
-    Version : 1.1
-    Description : A default navbar for all pages.
- --%>
+﻿<%@ Page Title="Add Game" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Add_Game.aspx.cs" Inherits="Summer_Games_2K16.Add_Game" %>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-   
-    <div class="container">
+     <div class="container">
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
                 <h1>Team Details</h1>
                 <h5>all fields required</h5>
                  <br />
-                <div class="form-group">
-                    <label class="control-label" for="GameNameTextBox">Game Name </label>
+                 <div class="form-group">
+                    <label class="control-label" for="GameNameTextBox">Game Type </label>
                    <asp:DropDownList ID="GameNameDropDownList" runat="server"
                      AutoPostBack="true" CssClass="btn btn-default btn-sm dropdown-toggle"
                      OnSelectedIndexChanged="GameNameDropDownList_SelectedIndexChanged">
                    <asp:ListItem Text="Soccer" Value="soccer"></asp:ListItem>
                    <asp:ListItem Text="Cricket" Value="cricket"></asp:ListItem>
-                    <asp:ListItem Text="Baseball" Value="baseball"></asp:ListItem>
-                       <asp:ListItem Text="Basketball" Value="basketball"></asp:ListItem>
+                    <asp:ListItem Text="Baseball" Value="baseball" ></asp:ListItem>
+                       <asp:ListItem Text="Basketball" Value="basketball" ></asp:ListItem>
                </asp:DropDownList>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="DescriptionTextBox">Game Name</label>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="GameNameTextBox" placeholder="Game Name" ></asp:TextBox>
                 </div>
                  <div class="form-group">
                     <label class="control-label" for="DescriptionTextBox">Description</label>
@@ -65,10 +62,10 @@
                 </div>
                  <asp:Button Text="Cancel" ID="CancelButton" CssClass="btn btn-warning btn-lg" runat="server" 
                         UseSubmitBehavior="false" CausesValidation="false" OnClick="CancelButton_Click" />
-                <asp:Button Text="Save" ID="SaveButton" CssClass="btn btn-primary btn-lg" runat="server"
-                   OnClick="SaveButton_Click" />
+                <asp:Button Text="Save"  ID="SaveButton" CssClass="btn btn-primary btn-lg savebtn"  runat="server"
+                   OnClick="SaveButton_Click"  />
 
             </div>
         </div><!-- end of row -->
-    </div><!-- end of container-->             
+    </div><!-- end of container--> 
 </asp:Content>

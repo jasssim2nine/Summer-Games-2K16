@@ -80,6 +80,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Add_Game.aspx" />
     <Content Include="Assets\images\baseball.jpg" />
     <Content Include="Assets\images\basketball.jpg" />
     <Content Include="Assets\images\cricket.jpg" />
@@ -99,7 +100,7 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\hover-min.css" />
     <Content Include="Cricket.aspx" />
-    <Content Include="Cricket_Details.aspx" />
+    <Content Include="Edit_Game.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="docs\index.html" />
     <Content Include="fonts\fontawesome-webfont.svg" />
@@ -169,6 +170,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add_Game.aspx.cs">
+      <DependentUpon>Add_Game.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_Game.aspx.designer.cs">
+      <DependentUpon>Add_Game.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Baseball.aspx.cs">
       <DependentUpon>Baseball.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -204,12 +212,12 @@
     <Compile Include="Cricket.aspx.designer.cs">
       <DependentUpon>Cricket.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Cricket_Details.aspx.cs">
-      <DependentUpon>Cricket_Details.aspx</DependentUpon>
+    <Compile Include="Edit_Game.aspx.cs">
+      <DependentUpon>Edit_Game.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Cricket_Details.aspx.designer.cs">
-      <DependentUpon>Cricket_Details.aspx</DependentUpon>
+    <Compile Include="Edit_Game.aspx.designer.cs">
+      <DependentUpon>Edit_Game.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
