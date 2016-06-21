@@ -28,6 +28,7 @@ namespace Summer_Games_2K16.User_Controls
                 //check if user logged in
                 if(HttpContext.Current.User.Identity.IsAuthenticated)
                 {
+                    
                     //show secured navlinks
                     GamesPlaceHolder.Visible = true;
                     DocsPlaceHolder.Visible = true;
