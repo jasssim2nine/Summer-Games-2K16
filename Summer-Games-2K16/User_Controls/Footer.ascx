@@ -8,6 +8,6 @@
  -->
 <footer class="footer navbar navbar-fixed-bottom">
     <div class="container">
-        <p class="text-muted" style="color:#fff; padding-top:10px;">&copy; 2K16 SUMMER GAMES</p>
+        <p class="text-muted" style="color:#fff;">&copy; 2K16 SUMMER GAMES</p>
     </div>
 </footer>
