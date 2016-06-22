@@ -70,7 +70,7 @@ namespace Summer_Games_2K16.Games
        */
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Cricket.aspx");
+            Response.Redirect("/Games/Cricket.aspx");
         }
 
         /**          
@@ -132,7 +132,7 @@ namespace Summer_Games_2K16.Games
                 db.SaveChanges();
 
                 // Redirect back to the updated cricket page
-                Response.Redirect("~/Cricket.aspx)
+                Response.Redirect("/Games/Cricket.aspx");
             }
         }
 
