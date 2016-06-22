@@ -13,6 +13,15 @@ namespace Summer_Games_2K16.User_Controls {
     public partial class Navbar {
         
         /// <summary>
+        /// GamesPlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder GamesPlaceHolder;
+        
+        /// <summary>
         /// soccer control.
         /// </summary>
         /// <remarks>
@@ -49,6 +58,15 @@ namespace Summer_Games_2K16.User_Controls {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl basketball;
         
         /// <summary>
+        /// DocsPlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder DocsPlaceHolder;
+        
+        /// <summary>
         /// docs control.
         /// </summary>
         /// <remarks>
@@ -56,6 +74,15 @@ namespace Summer_Games_2K16.User_Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl docs;
+        
+        /// <summary>
+        /// PublicPlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder PublicPlaceHolder;
         
         /// <summary>
         /// login control.
@@ -74,6 +101,15 @@ namespace Summer_Games_2K16.User_Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl register;
+        
+        /// <summary>
+        /// LogOutPlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder LogOutPlaceHolder;
         
         /// <summary>
         /// logout control.
