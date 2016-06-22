@@ -34,7 +34,7 @@
                  <!-- gridview to display the selected game and its all games -->
               <asp:GridView ID="SoccerGridView" AutoGenerateColumns="false"  CssClass="table table-bordered table-striped table-hover"
                     DataKeyNames="GAMEID" OnRowDeleting="SoccerGridView_RowDeleting" AllowPaging="true"
-                     PageSize="4" OnPageIndexChanging="SoccerGridView_PageIndexChanging"
+                     PageSize="3" OnPageIndexChanging="SoccerGridView_PageIndexChanging"
                    PagerStyle-CssClass="pagination-ys"  runat="server">
                     <Columns>
                          <asp:BoundField DataField="GAMEID" HeaderText="GameID" Visible="false"/>
@@ -62,4 +62,5 @@
                   </div>
             </div>
         </div>
+    </div>
 </asp:Content>

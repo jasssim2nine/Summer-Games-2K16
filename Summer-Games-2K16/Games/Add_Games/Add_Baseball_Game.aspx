@@ -11,10 +11,10 @@
                     <asp:DropDownList ID="GameTypeDropDownList" runat="server"
                      AutoPostBack="true" CssClass="btn btn-default btn-sm dropdown-toggle"
                      >
-                   <asp:ListItem Text="Soccer" Value="soccer"></asp:ListItem>
-                        <asp:ListItem Text="Cricket" Value="cricket"></asp:ListItem>
-                        <asp:ListItem Text="Baseball" Value="baseball"></asp:ListItem>
-                        <asp:ListItem Text="Basketball" Value="basketball"></asp:ListItem>
+                   <asp:ListItem Text="Soccer" Value="soccer" Enabled="false"></asp:ListItem>
+                        <asp:ListItem Text="Cricket" Value="cricket" Enabled="false"></asp:ListItem>
+                        <asp:ListItem Text="Baseball" Value="baseball" Enabled="true"></asp:ListItem>
+                        <asp:ListItem Text="Basketball" Value="basketball" Enabled="false"></asp:ListItem>
                     </asp:DropDownList>
                 </div>
         
