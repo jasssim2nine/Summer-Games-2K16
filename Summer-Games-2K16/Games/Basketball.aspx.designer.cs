@@ -13,12 +13,21 @@ namespace Summer_Games_2K16 {
     public partial class Basketball {
         
         /// <summary>
-        /// BaseballGridView control.
+        /// PageSizeDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView BaseballGridView;
+        protected global::System.Web.UI.WebControls.DropDownList PageSizeDropDownList;
+        
+        /// <summary>
+        /// BasketballGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView BasketballGridView;
     }
 }

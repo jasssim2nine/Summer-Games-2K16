@@ -9,31 +9,30 @@ using System.Web.UI.WebControls;
 using Summer_Games_2K16.Models;
 using System.Web.ModelBinding;
 using System.Linq.Dynamic;
-
 namespace Summer_Games_2K16.Games
 {
-    public partial class Soccer_Details : System.Web.UI.Page
+    public partial class Add_Game : System.Web.UI.Page
     {
-
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if ((!IsPostBack) && (Request.QueryString.Count > 0))
             {
-
-                this.GetSoccerData();
+               
+                this.GetGameData();
             }
         }
 
         /**
-         * 
-         * <summary>
-         * This method gets the cricket data from database
-         * </summary>
-         * @method GetDepartments
-         * 
-         * @returns {void}      
-         */
-        protected void GetSoccerData()
+       * 
+       * <summary>
+       * This method gets the cricket data from database
+       * </summary>
+       * @method GetDepartments
+       * 
+       * @returns {void}      
+       */
+        protected void GetGameData()
         {
             int GameID = Convert.ToInt32(Request.QueryString["GAMEID"]);
 
@@ -45,7 +44,7 @@ namespace Summer_Games_2K16.Games
 
                 if (updatedrecord != null)
                 {
-
+                    GameTypeDropDownList.Text = updatedrecord.GAME_TYPE;
                     GameNameTextBox.Text = updatedrecord.GAMENAME;
                     DescriptionTextBox.Text = updatedrecord.DESCRIPTION;
                     SpectatorsTextBox.Text = updatedrecord.SPECTATORS.ToString();
@@ -71,7 +70,7 @@ namespace Summer_Games_2K16.Games
        */
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Games/Soccer.aspx");
+            Response.Redirect("/Games/Cricket.aspx");
         }
 
         /**          
@@ -106,7 +105,7 @@ namespace Summer_Games_2K16.Games
                 }
 
                 // add form data to the new cricket game record
-
+                newGame.GAME_TYPE = GameTypeDropDownList.Text;
                 newGame.GAMENAME = GameNameTextBox.Text;
                 newGame.DESCRIPTION = DescriptionTextBox.Text;
                 newGame.TEAM_A = TeamATextBox.Text;
@@ -133,10 +132,9 @@ namespace Summer_Games_2K16.Games
                 db.SaveChanges();
 
                 // Redirect back to the updated cricket page
-                Response.Redirect("/Games/Soccer.aspx");
+                Response.Redirect("/Games/Cricket.aspx");
             }
         }
 
     }
 }
-   

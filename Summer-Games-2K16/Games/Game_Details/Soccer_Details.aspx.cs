@@ -12,14 +12,15 @@ using System.Linq.Dynamic;
 
 namespace Summer_Games_2K16.Games
 {
-    public partial class Game_Details : System.Web.UI.Page
+    public partial class Soccer_Details : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if ((!IsPostBack) && (Request.QueryString.Count > 0))
             {
-                
-                this.GetGameData();
+
+                this.GetSoccerData();
             }
         }
 
@@ -32,7 +33,7 @@ namespace Summer_Games_2K16.Games
          * 
          * @returns {void}      
          */
-        protected void GetGameData()
+        protected void GetSoccerData()
         {
             int GameID = Convert.ToInt32(Request.QueryString["GAMEID"]);
 
@@ -41,10 +42,10 @@ namespace Summer_Games_2K16.Games
                 GAMES updatedrecord = (from gc in db.GAMES
                                        where gc.GAMEID == GameID
                                        select gc).FirstOrDefault();
-               
+
                 if (updatedrecord != null)
                 {
-                    
+
                     GameNameTextBox.Text = updatedrecord.GAMENAME;
                     DescriptionTextBox.Text = updatedrecord.DESCRIPTION;
                     SpectatorsTextBox.Text = updatedrecord.SPECTATORS.ToString();
@@ -70,7 +71,7 @@ namespace Summer_Games_2K16.Games
        */
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Games/Cricket.aspx");
+            Response.Redirect("/Games/Soccer.aspx");
         }
 
         /**          
@@ -100,8 +101,8 @@ namespace Summer_Games_2K16.Games
 
                     // get the current cricket game from EF DB
                     newGame = (from gc in db.GAMES
-                                      where gc.GAMEID == GameID
-                                      select gc).FirstOrDefault();
+                               where gc.GAMEID == GameID
+                               select gc).FirstOrDefault();
                 }
 
                 // add form data to the new cricket game record
@@ -132,10 +133,10 @@ namespace Summer_Games_2K16.Games
                 db.SaveChanges();
 
                 // Redirect back to the updated cricket page
-                Response.Redirect("/Games/Cricket.aspx");
+                Response.Redirect("/Games/Soccer.aspx");
             }
         }
 
-       
-    }//end of class
-}//end of namespace
+    }
+}
+   

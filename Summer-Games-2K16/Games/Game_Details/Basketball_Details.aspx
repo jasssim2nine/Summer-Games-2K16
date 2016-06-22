@@ -1,22 +1,19 @@
-﻿<%@ Page Title="Add Game" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Add_Game.aspx.cs" Inherits="Summer_Games_2K16.Games.Add_Game" %>
+﻿<%@ Page Title="Basketball Details" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Basketball_Details.aspx.cs" Inherits="Summer_Games_2K16.Games.Game_Details.Basketball_Details" %>
+
+
+<%--
+     Author Name : Jasim Khan, Ebin Antoo
+    Student # : 200263011, 200269378
+    Date : 08-JUn-16
+    Version : 1.1
+    Description : A default navbar for all pages.
+ --%>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    
+
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <div class="form-group">
-                    <label class="control-label" for="GameTypeTextBox">Game Type</label>
-                    <asp:DropDownList ID="GameTypeDropDownList" runat="server"
-                     AutoPostBack="true" CssClass="btn btn-default btn-sm dropdown-toggle"
-                     >
-                   <asp:ListItem Text="Soccer" Value="soccer"></asp:ListItem>
-                        <asp:ListItem Text="Cricket" Value="cricket"></asp:ListItem>
-                        <asp:ListItem Text="Baseball" Value="baseball"></asp:ListItem>
-                        <asp:ListItem Text="Basketball" Value="basketball"></asp:ListItem>
-                    </asp:DropDownList>
-                </div>
-        
                 <div class="form-group">
                     <label class="control-label" for="GameNameTextBox">Game Name</label>
                     <asp:TextBox runat="server" CssClass="form-control" ID="GameNameTextBox" placeholder="Game Name" ></asp:TextBox>
@@ -70,6 +67,6 @@
                      OnClick="SaveButton_Click"/>
          </div>    
 
-    </div>   
+    </div>      
 
 </asp:Content>
