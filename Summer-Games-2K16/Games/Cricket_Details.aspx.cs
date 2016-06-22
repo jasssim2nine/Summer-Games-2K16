@@ -18,7 +18,7 @@ namespace Summer_Games_2K16.Games
         {
             if ((!IsPostBack) && (Request.QueryString.Count > 0))
             {
-                ViewState["GoBackTo"] = Request.UrlReferrer;
+                
                 this.GetGameData();
             }
         }
@@ -70,7 +70,7 @@ namespace Summer_Games_2K16.Games
        */
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect(ViewState["GoBackTo"].ToString());
+            Response.Redirect("~/Cricket.aspx");
         }
 
         /**          
@@ -132,9 +132,10 @@ namespace Summer_Games_2K16.Games
                 db.SaveChanges();
 
                 // Redirect back to the updated cricket page
-                Response.Redirect(ViewState["GoBackTo"].ToString());
+                Response.Redirect("~/Cricket.aspx)
             }
         }
 
+       
     }//end of class
 }//end of namespace
