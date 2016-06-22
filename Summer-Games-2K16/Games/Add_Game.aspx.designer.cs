@@ -49,6 +49,24 @@ namespace Summer_Games_2K16.Games {
         protected global::System.Web.UI.WebControls.TextBox SpectatorsTextBox;
         
         /// <summary>
+        /// PlayedOnTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox PlayedOnTextBox;
+        
+        /// <summary>
+        /// WinnerTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox WinnerTextBox;
+        
+        /// <summary>
         /// TeamATextBox control.
         /// </summary>
         /// <remarks>
@@ -83,24 +101,6 @@ namespace Summer_Games_2K16.Games {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox PointBTextBox;
-        
-        /// <summary>
-        /// PlayedOnTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox PlayedOnTextBox;
-        
-        /// <summary>
-        /// WinnerTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox WinnerTextBox;
         
         /// <summary>
         /// TotalPointsTextBox control.

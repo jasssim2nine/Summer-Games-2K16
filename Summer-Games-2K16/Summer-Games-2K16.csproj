@@ -255,6 +255,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Games\Add_Game.aspx.cs">
+      <DependentUpon>Add_Game.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Games\Add_Game.aspx.designer.cs">
+      <DependentUpon>Add_Game.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Games\Baseball.aspx.cs">
       <DependentUpon>Baseball.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -58,7 +58,7 @@
                 </asp:GridView>
                 
                   <div class="col-md-offset-2 col-md-8">
-                      <a href="Soccer_Details.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</a>  
+                      <a href="/Games/Add_Game.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</a>  
                   </div>
             </div>
         </div>
