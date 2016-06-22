@@ -140,7 +140,8 @@
     <Content Include="Assets\images\git_screenshot.JPG" />
     <Content Include="Assets\images\screenshot.JPG" />
     <Content Include="Assets\images\soccer.jpg" />
-    <Content Include="Games\Add_Game.aspx" />
+	<Content Include="ChangePassword.aspx" />
+	<Content Include="Games\Add_Game.aspx" />
     <Content Include="Games\Baseball.aspx" />
     <Content Include="Games\Basketball.aspx" />
     <Content Include="Contact.aspx" />
@@ -223,6 +224,7 @@
     </Content>
     <Content Include="favicon\manifest.json" />
     <Content Include="Register.aspx" />
+    <Content Include="ResetPassword.aspx" />
     <Content Include="Scripts\App.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -250,13 +252,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Games\Add_Game.aspx.cs">
-      <DependentUpon>Add_Game.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Games\Add_Game.aspx.designer.cs">
-      <DependentUpon>Add_Game.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Games\Baseball.aspx.cs">
       <DependentUpon>Baseball.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -386,6 +381,13 @@
     </Compile>
     <Compile Include="Games\Soccer.aspx.designer.cs">
       <DependentUpon>Soccer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="User_Controls\Footer.ascx.cs">
