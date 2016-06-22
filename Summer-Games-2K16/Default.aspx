@@ -9,7 +9,7 @@
     Description : A default page to display the game tracking table and a main game.
     -->
 
-    <div class="container-fluid">
+    <div class="container-fluid"> 
         <div class="row">
             <div class="wrapper-bg">
                 <h2 style="margin-top:15%">WELCOME TO SUMMER GAMES</h2>
