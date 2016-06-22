@@ -140,8 +140,8 @@
     <Content Include="Assets\images\git_screenshot.JPG" />
     <Content Include="Assets\images\screenshot.JPG" />
     <Content Include="Assets\images\soccer.jpg" />
-	<Content Include="ChangePassword.aspx" />
-	<Content Include="Games\Add_Game.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="Games\Add_Game.aspx" />
     <Content Include="Games\Baseball.aspx" />
     <Content Include="Games\Basketball.aspx" />
     <Content Include="Contact.aspx" />
