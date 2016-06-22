@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Game Details" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Game_Details.aspx.cs" Inherits="Summer_Games_2K16.Games.Game_Details" %>
+﻿<%@ Page Title="Game Details" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Cricket_Details.aspx.cs" Inherits="Summer_Games_2K16.Games.Game_Details" %>
 <%--
      Author Name : Jasim Khan, Ebin Antoo
     Student # : 200263011, 200269378

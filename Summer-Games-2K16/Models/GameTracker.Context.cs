@@ -16,7 +16,7 @@ namespace Summer_Games_2K16.Models
     public partial class GameConnection : DbContext
     {
         public GameConnection()
-            : base("name=DefaultConnection")
+            : base("name=GameConnection")
         {
         }
     

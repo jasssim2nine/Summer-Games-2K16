@@ -21,7 +21,7 @@ namespace Summer_Games_2K16
             //if page loads the first time,populate cricket grid.
             if (!IsPostBack)
             {
-                //get cricket table/data
+                //get soccer table/data
                 this.GetSoccerData();
             }
         }
@@ -44,7 +44,7 @@ namespace Summer_Games_2K16
             {
 
                 var soccerQuery = (from gc in db.GAMES
-                                   where gc.GAME_TYPE == "soccer"
+                                   
                                     select gc);
 
                 SoccerGridView.DataSource = soccerQuery.ToList();
@@ -94,8 +94,5 @@ namespace Summer_Games_2K16
             //refresh the grid
             this.GetSoccerData();
         }
-
-
-
     }
 }
