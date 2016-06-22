@@ -139,7 +139,8 @@
     <Content Include="Assets\images\git_screenshot.JPG" />
     <Content Include="Assets\images\screenshot.JPG" />
     <Content Include="Assets\images\soccer.jpg" />
-    <Content Include="ChangePassword.aspx" />
+	<Content Include="ChangePassword.aspx" />
+	<Content Include="Games\Add_Game.aspx" />
     <Content Include="Games\Baseball.aspx" />
     <Content Include="Games\Basketball.aspx" />
     <Content Include="Contact.aspx" />
@@ -192,6 +193,7 @@
     <Content Include="Assets\images\photo-camera.png" />
     <Content Include="Assets\images\wireframe.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Games\Game_Details.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="Games\MainMenu.aspx" />
@@ -249,13 +251,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChangePassword.aspx.cs">
-      <DependentUpon>ChangePassword.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ChangePassword.aspx.designer.cs">
-      <DependentUpon>ChangePassword.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Games\Baseball.aspx.cs">
       <DependentUpon>Baseball.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -298,6 +293,13 @@
     <Compile Include="FrontEnd.Master.designer.cs">
       <DependentUpon>FrontEnd.Master</DependentUpon>
     </Compile>
+    <Compile Include="Games\Game_Details.aspx.cs">
+      <DependentUpon>Game_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Games\Game_Details.aspx.designer.cs">
+      <DependentUpon>Game_Details.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -319,7 +321,22 @@
     <Compile Include="Games\MainMenu.aspx.designer.cs">
       <DependentUpon>MainMenu.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\AspNetRole.cs">
+      <DependentUpon>GameTracker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUser.cs">
+      <DependentUpon>GameTracker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserClaim.cs">
+      <DependentUpon>GameTracker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserLogin.cs">
+      <DependentUpon>GameTracker.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Cours.cs">
+      <DependentUpon>GameTracker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\C__MigrationHistory.cs">
       <DependentUpon>GameTracker.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Department.cs">

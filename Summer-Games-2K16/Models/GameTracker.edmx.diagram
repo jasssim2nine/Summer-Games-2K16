@@ -13,6 +13,14 @@
         <AssociationConnector Association="GameTrackerModel.FK_Courses_DepartmentID" ManuallyRouted="false" />
         <AssociationConnector Association="GameTrackerModel.FK_Enrollments_CourseID" ManuallyRouted="false" />
         <AssociationConnector Association="GameTrackerModel.FK_Enrollments_StudentID" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="GameTrackerModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="7.75" />
+        <EntityTypeShape EntityType="GameTrackerModel.AspNetRole" Width="1.5" PointX="8.75" PointY="2.5" />
+        <EntityTypeShape EntityType="GameTrackerModel.AspNetUserClaim" Width="1.5" PointX="13.25" PointY="3.625" />
+        <EntityTypeShape EntityType="GameTrackerModel.AspNetUserLogin" Width="1.5" PointX="13.25" PointY="1" />
+        <EntityTypeShape EntityType="GameTrackerModel.AspNetUser" Width="1.5" PointX="11" PointY="1.375" />
+        <AssociationConnector Association="GameTrackerModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="GameTrackerModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="GameTrackerModel.AspNetUserRoles" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

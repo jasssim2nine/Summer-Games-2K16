@@ -38,14 +38,14 @@ namespace Summer_Games_2K16
 
         protected void GetSoccerData()
         {
-            var soccerVariable = "Soccer";
+            
             //connect to EF
-            using (GameConnection db = new GameConnection())
+            using (DefaultConnection db = new DefaultConnection())
             {
 
-                var soccerQuery = (from allGames in db.GAMES
-                                    where allGames.GAMENAME == soccerVariable
-                                    select allGames);
+                var soccerQuery = (from gc in db.GAMES
+                                   where gc.GAME_TYPE == "soccer"
+                                    select gc);
 
                 SoccerGridView.DataSource = soccerQuery.ToList();
                 SoccerGridView.DataBind();
@@ -61,7 +61,7 @@ namespace Summer_Games_2K16
             //get the selected game id using soccer datakey 
             int GAMEID = Convert.ToInt32(SoccerGridView.DataKeys[selectedSoccerGame].Values["GAMEID"]);
             // using ef to find the selected soccer game. 
-            using (GameConnection db = new GameConnection())
+            using (DefaultConnection db = new DefaultConnection())
             {
                 //create object of games class and store the query
                 GAMES deletedSoccerGame = (from soccerrecords in db.GAMES

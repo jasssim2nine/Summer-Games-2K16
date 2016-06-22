@@ -38,14 +38,14 @@ namespace Summer_Games_2K16
          */
         protected void GetCricketData()
         {
-            var cricketVariable = "Cricket";
+           
             //connect to EF
-            using (GameConnection db = new GameConnection())
+            using (DefaultConnection db = new DefaultConnection())
             {
                 
-                var cricketQuery = (from allGames in db.GAMES
-                                    where allGames.GAMENAME== cricketVariable
-                                    select allGames);
+                var cricketQuery = (from gc in db.GAMES
+                                    where gc.GAME_TYPE == "cricket"  
+                                    select gc);
             
                 CricketGridView.DataSource = cricketQuery.ToList();
                 CricketGridView.DataBind();
@@ -61,7 +61,7 @@ namespace Summer_Games_2K16
             //get the selected game id using cricket datakey 
             int GAMEID = Convert.ToInt32(CricketGridView.DataKeys[selectedCricketGame].Values["GAMEID"]);
             // using ef to find the selected cricket game. 
-            using (GameConnection db = new GameConnection())
+            using (DefaultConnection db = new DefaultConnection())
             {
                 //create object of games class and store the query
                 GAMES deletedCricketGame = (from cricketrecords in db.GAMES
