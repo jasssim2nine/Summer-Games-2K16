@@ -36,7 +36,7 @@ namespace Summer_Games_2K16.Games
         {
             int GameID = Convert.ToInt32(Request.QueryString["GAMEID"]);
 
-            using (DefaultConnection db = new DefaultConnection())
+            using (GameConnection db = new GameConnection())
             {
                 GAMES updatedrecord = (from gc in db.GAMES
                                        where gc.GAMEID == GameID
@@ -85,7 +85,7 @@ namespace Summer_Games_2K16.Games
         protected void SaveButton_Click(object sender, EventArgs e)
         {
             // Use EF to connect to the server
-            using (DefaultConnection db = new DefaultConnection())
+            using (GameConnection db = new GameConnection())
             {
                 // use the Game Tracker model to create a new cricket game object and
                 // save a new record

@@ -13,9 +13,9 @@ namespace Summer_Games_2K16.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DefaultConnection : DbContext
+    public partial class GameConnection : DbContext
     {
-        public DefaultConnection()
+        public GameConnection()
             : base("name=DefaultConnection")
         {
         }
