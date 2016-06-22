@@ -250,7 +250,9 @@
     <Content Include="Games\Soccer.aspx" />
     <Content Include="User_Controls\Footer.ascx" />
     <Content Include="User_Controls\Navbar.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Games\Baseball.aspx.cs">
