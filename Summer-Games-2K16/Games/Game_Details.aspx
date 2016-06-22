@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Edit Game" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Edit_Game.aspx.cs" Inherits="Summer_Games_2K16.Cricket_Details" %>
+﻿<%@ Page Title="Game Details" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Game_Details.aspx.cs" Inherits="Summer_Games_2K16.Games.Game_Details" %>
 <%--
      Author Name : Jasim Khan, Ebin Antoo
     Student # : 200263011, 200269378
@@ -6,14 +6,15 @@
     Version : 1.1
     Description : A default navbar for all pages.
  --%>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-   
+
     <div class="container">
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
-                <h1>Team Details</h1>
-                <h5>all fields required</h5>
-                 <br />
+                <h1>Game Details</h1>
+                <br />
+                
                 <div class="form-group">
                     <label class="control-label" for="DescriptionTextBox">Game Name</label>
                     <asp:TextBox runat="server" CssClass="form-control" ID="GameNameTextBox" placeholder="Game Name" ></asp:TextBox>
@@ -59,9 +60,10 @@
                  <asp:Button Text="Cancel" ID="CancelButton" CssClass="btn btn-warning btn-lg" runat="server" 
                         UseSubmitBehavior="false" CausesValidation="false" OnClick="CancelButton_Click" />
                 <asp:Button Text="Save" ID="SaveButton" CssClass="btn btn-primary btn-lg" runat="server"
-                   OnClick="SaveButton_Click" />
-
+                     OnClick="SaveButton_Click"
+                    />
             </div>
-        </div><!-- end of row -->
-    </div><!-- end of container-->             
+        </div>
+    </div>      
+
 </asp:Content>

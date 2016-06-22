@@ -7,10 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Summer_Games_2K16 {
+namespace Summer_Games_2K16.Games {
     
     
-    public partial class Cricket_Details {
+    public partial class Add_Game {
+        
+        /// <summary>
+        /// GameTypeDropDownList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList GameTypeDropDownList;
         
         /// <summary>
         /// GameNameTextBox control.
