@@ -40,12 +40,14 @@ namespace Summer_Games_2K16
                     if (Convert.ToBoolean(rdr["ReturnCode"]))
                     {
                         SendPasswordResetEmail(rdr["Email"].ToString(), txtUserName.Text, rdr["UniqueId"].ToString());
-                        lblMessage.Text = "An email with instructions to reset your password is sent to your registered email";
+                        MessageLabel.Text = "An email with instructions to reset your password is sent to your registered email";
+                        MessageFlash.Visible = true;
+                        //lblMessage.Text = "An email with instructions to reset your password is sent to your registered email";
                     }
                     else
                     {
-                        lblMessage.ForeColor = System.Drawing.Color.Red;
-                        lblMessage.Text = "Username not found!";
+                        StatusLabel.Text = "Username not found!";
+                        AlertFlash.Visible = true;
                     }
                 }
             }
@@ -61,10 +63,10 @@ namespace Summer_Games_2K16
             StringBuilder sbEmailBody = new StringBuilder();
             sbEmailBody.Append("Dear " + UserName + ",<br/><br/>");
             sbEmailBody.Append("Please click on the following link to reset your password");
-            sbEmailBody.Append("<br/>"); sbEmailBody.Append("http://localhost/ChangePassword.aspx?uid=" + UniqueId);
+            sbEmailBody.Append("<br/>"); sbEmailBody.Append("http://localhost:44304/ChangePassword.aspx?uid=" + UniqueId);
             sbEmailBody.Append("<br/><br/>");
-            sbEmailBody.Append("<b>Pragim Technologies</b>");
-
+            sbEmailBody.Append("<b>Summer Games 2K16</b>");
+             
             mailMessage.IsBodyHtml = true;
 
             mailMessage.Body = sbEmailBody.ToString();

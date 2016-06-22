@@ -137,6 +137,7 @@
     <Content Include="Assets\images\baseball.jpg" />
     <Content Include="Assets\images\basketball.jpg" />
     <Content Include="Assets\images\cricket.jpg" />
+    <Content Include="Assets\images\football-stadium-soccer-pitch-wallpaper.jpg" />
     <Content Include="Assets\images\git_screenshot.JPG" />
     <Content Include="Assets\images\screenshot.JPG" />
     <Content Include="Assets\images\soccer.jpg" />
@@ -255,6 +256,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Games\Baseball.aspx.cs">
       <DependentUpon>Baseball.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

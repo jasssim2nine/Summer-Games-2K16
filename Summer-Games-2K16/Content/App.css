@@ -19,7 +19,7 @@
 
 @media (min-width: 768px){
     ul.doc-nav.navbar-nav{
-        padding-left:25%;
+        padding-left:10%;
     }
 }
 
@@ -407,4 +407,39 @@ form#login-form {
 /**nav bottom*/
 .nav-bottom{
     border-bottom: solid red;
+}
+
+.go-back-btn{    
+    color:white !important;
+}
+
+.go-back-btn:hover{
+    background-position: 0 !important;
+}
+
+.wrapper-bg{
+    background-image: url("../Assets/images/football-stadium-soccer-pitch-wallpaper.jpg");    
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: fixed;
+    margin-top:-21px;
+    text-align:center;
+    color:white;
+    font-size:medium;
+}
+
+.view-records{
+    border: solid;
+    width: 10%;        
+}
+
+.view-records-a{
+    color:white;
+    text-decoration:none;
+}
+
+.view-records-a:hover{
+    text-decoration:none;
+    color:white;
 }
