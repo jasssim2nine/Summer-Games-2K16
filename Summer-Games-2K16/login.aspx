@@ -21,6 +21,8 @@
 
                     <p class="text-p">Don't have an account? <a href="/Register.aspx">Register now</a> </p>
 
+                    <p class="text-p">Forgot Password <a href="/ResetPassword.aspx"> Reset Password</a> </p>
+
                 </div>
             </div>
         </div>

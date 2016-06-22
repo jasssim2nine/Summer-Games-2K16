@@ -8,14 +8,20 @@
     Version : 2.1
     Description : A default page to display the game tracking table and a main game.
     -->
-    <div class="home-header">
-        <h1> SUMMER GAMES 2016</h1>
-    </div>
-    
-    <div class="container" style="padding-top:50px;">
-        <div class="row font-view">
-            <h2>Welcome</h2>
+
+    <div class="container-fluid"> 
+        <div class="row">
+            <div class="wrapper-bg">
+                <h2 style="margin-top:15%">WELCOME TO SUMMER GAMES</h2>
+                <h3>2K16</h3>              
+                <a href="/Register.aspx" class="view-records-a">
+                    <div class="view-records center-block">
+                        View Records
+                    </div>
+                 </a>
+            </div>
         </div>
+         
     </div>
     
 </asp:Content>
