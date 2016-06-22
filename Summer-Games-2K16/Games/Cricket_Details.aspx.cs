@@ -52,7 +52,7 @@ namespace Summer_Games_2K16.Games
                     PointATextBox.Text = updatedrecord.TEAM_A_POINTS.ToString();
                     TeamBTextBox.Text = updatedrecord.TEAM_B;
                     PointBTextBox.Text = updatedrecord.TEAM_B_POINTS.ToString();
-                    PlayedOnTextBox.Text = updatedrecord.PLAYED_ON.ToShortDateString();
+                    PlayedOnTextBox.Text = updatedrecord.PLAYED_ON.ToString("yyy-MM-dd");
                     WinnerTextBox.Text = updatedrecord.WINNER;
                     TotalPointsTextBox.Text = updatedrecord.TOTAL_POINTS.ToString();
                 }
