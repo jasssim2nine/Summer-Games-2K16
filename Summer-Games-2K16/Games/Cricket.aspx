@@ -58,7 +58,7 @@
                         <asp:BoundField DataField="TOTAL_POINTS" HeaderText="Total Points" Visible="true"/>
                         <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'/> Edit"
                                 navigateurl="~/Cricket_Details.aspx" ControlStyle-CssClass="btn btn-primary btn-sm" runat="server" 
-                                DataNavigateUrlFields="GAMEID"   DataNavigateUrlFormatString="Cricket_Details.aspx?GameID={0}"  />
+                                DataNavigateUrlFields="GAMEID"   DataNavigateUrlFormatString="/Games/Game_Details/Cricket_Details.aspx?GameID={0}"  />
                          <asp:CommandField HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'/>Delete"
                               ShowDeleteButton="true" ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
                     </Columns>
@@ -66,7 +66,7 @@
                 </asp:GridView>
                 
                  <div class="col-md-offset-2 col-md-8">
-                      <a href="/Games/Cricket_Details.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</a>  
+                      <a href="/Games/Add_Games/Add_Cricket_Game.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</a>  
                   </div>
                
             </div>

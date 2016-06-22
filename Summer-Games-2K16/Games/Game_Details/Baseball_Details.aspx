@@ -1,4 +1,6 @@
-﻿<%@ Page Title="Game Details" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Cricket_Details.aspx.cs" Inherits="Summer_Games_2K16.Games.Game_Details" %>
+﻿<%@ Page Title="Baseball Details" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Baseball_Details.aspx.cs" Inherits="Summer_Games_2K16.Games.Game_Details.Baseball_Details" %>
+
+
 <%--
      Author Name : Jasim Khan, Ebin Antoo
     Student # : 200263011, 200269378
@@ -13,7 +15,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label class="control-label" for="DescriptionTextBox">Game Name</label>
+                    <label class="control-label" for="GameNameTextBox">Game Name</label>
                     <asp:TextBox runat="server" CssClass="form-control" ID="GameNameTextBox" placeholder="Game Name" ></asp:TextBox>
                 </div>
                  <div class="form-group">

@@ -44,7 +44,7 @@ namespace Summer_Games_2K16
             {
                 
                 var cricketQuery = (from gc in db.GAMES
-                                     
+                                    where gc.GAME_TYPE=="cricket"
                                     select gc);
             
                 CricketGridView.DataSource = cricketQuery.ToList();

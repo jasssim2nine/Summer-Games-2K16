@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Summer_Games_2K16.Games
 {
-    public partial class Add_Game : System.Web.UI.Page
+    public partial class Add_Basketball_Game : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Summer_Games_2K16.Games {
+namespace Summer_Games_2K16.Games.Game_Details {
     
     
-    public partial class Game_Details {
+    public partial class Basketball_Details {
         
         /// <summary>
         /// GameNameTextBox control.
