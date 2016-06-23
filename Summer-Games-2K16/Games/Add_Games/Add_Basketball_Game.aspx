@@ -1,5 +1,11 @@
-﻿<%@ Page Title="Add Basketball Game" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Add_Basketball_Game.aspx.cs" Inherits="Summer_Games_2K16.Games.Add_Basketball_Game" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Add_Basketball_Game.aspx.cs" Inherits="Summer_Games_2K16.Games.Add_Games.Add_Basketball_Game" %>
+<%--
+     Author Name : Jasim Khan, Ebin Antoo
+    Student # : 200263011, 200269378
+    Date : 08-JUn-16
+    Version : 1.1
+    Description : page to add only basketball games.
+ --%>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     
      

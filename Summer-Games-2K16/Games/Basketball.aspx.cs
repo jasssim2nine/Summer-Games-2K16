@@ -9,6 +9,13 @@ using System.Web.UI.WebControls;
 using Summer_Games_2K16.Models;
 using System.Web.ModelBinding;
 using System.Linq.Dynamic;
+
+/***
+ * @Author : Jasim Khan, Ebin Antoo
+ * @Date : 06-22-16
+ * @Description : back-end file to run CRUD for basketball games
+ * @Version : v3.10
+ */
 namespace Summer_Games_2K16
 {
     public partial class Basketball : System.Web.UI.Page

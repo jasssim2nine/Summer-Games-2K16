@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Summer_Games_2K16.Games {
+namespace Summer_Games_2K16.Games.Add_Games {
     
     
-    public partial class Add_Game {
+    public partial class Add_Cricket_Game {
         
         /// <summary>
         /// GameTypeDropDownList control.

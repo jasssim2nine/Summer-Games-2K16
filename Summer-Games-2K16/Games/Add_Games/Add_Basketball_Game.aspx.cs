@@ -8,7 +8,14 @@ using System.Web.UI.WebControls;
 using Summer_Games_2K16.Models;
 using System.Web.ModelBinding;
 using System.Linq.Dynamic;
-namespace Summer_Games_2K16.Games
+
+/***
+ * @Author : Jasim Khan, Ebin Antoo
+ * @Date : 06-22-16
+ * @Description : back-end file to add new games for basketball
+ * @Version : v3.10
+ */
+namespace Summer_Games_2K16.Games.Add_Games
 {
     public partial class Add_Basketball_Game : System.Web.UI.Page
     {
@@ -25,9 +32,9 @@ namespace Summer_Games_2K16.Games
         /**
        * 
        * <summary>
-       * This method gets the cricket data from database
+       * This method gets the basketball data from database
        * </summary>
-       * @method GetDepartments
+       * @method GetBasketballData
        * 
        * @returns {void}      
        */
@@ -60,7 +67,7 @@ namespace Summer_Games_2K16.Games
 
         /**          
        * <summary>
-       * This method takes back to the previous page, cancel
+       * This method takes back to the basketball page, cancel
        * </summary>
        * @method CancelButton_Click
        * @param {object} sender
@@ -86,7 +93,7 @@ namespace Summer_Games_2K16.Games
             // Use EF to connect to the server
             using (GameConnection db = new GameConnection())
             {
-                // use the Game Tracker model to create a new cricket game object and
+                // use the Game Tracker model to create a new basketball game object and
                 // save a new record
                 GAMES newGame = new GAMES();
 
@@ -97,13 +104,13 @@ namespace Summer_Games_2K16.Games
                     // get the id from the URL
                     GameID = Convert.ToInt32(Request.QueryString["GameID"]);
 
-                    // get the current cricket game from EF DB
+                    // get the current basketball game from EF DB
                     newGame = (from gc in db.GAMES
                                where gc.GAMEID == GameID
                                select gc).FirstOrDefault();
                 }
 
-                // add form data to the new cricket game record
+                // add form data to the new basketball game record
                 newGame.GAME_TYPE = GameTypeDropDownList.Text;
                 newGame.GAMENAME = GameNameTextBox.Text;
                 newGame.DESCRIPTION = DescriptionTextBox.Text;
@@ -119,7 +126,7 @@ namespace Summer_Games_2K16.Games
 
 
 
-                // use LINQ to ADO.NET to add / insert new cricket game into the database
+                // use LINQ to ADO.NET to add / insert new basketball game into the database
 
                 if (GameID == 0)
                 {
@@ -130,7 +137,7 @@ namespace Summer_Games_2K16.Games
                 // save our changes - also updates and inserts
                 db.SaveChanges();
 
-                // Redirect back to the updated cricket page
+                // Redirect back to the updated basketball page
                 Response.Redirect("/Games/Basketball.aspx");
             }
         }
