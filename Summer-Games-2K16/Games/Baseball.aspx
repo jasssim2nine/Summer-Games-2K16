@@ -7,14 +7,14 @@
     Description : A default navbar for all pages.
  --%>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <h3 style="text-align:center;">MLB League</h3>
             <div class="col-md-offset-2 col-md-8 text-center">
                  <h2> POINTS TABLE</h2>
                     <div class="container-fluid">
                        <div class="row">
-                           <div class="col-offset-3 text-center">
+                           <div class="col-offset-2 text-center">
                                <nav>
                                  <ul class="pager">
                                    <li><a href="#">PREVIOUS WEEK</a></li>
