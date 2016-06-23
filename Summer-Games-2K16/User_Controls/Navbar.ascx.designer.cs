@@ -22,6 +22,15 @@ namespace Summer_Games_2K16.User_Controls {
         protected global::System.Web.UI.WebControls.PlaceHolder GamesPlaceHolder;
         
         /// <summary>
+        /// menu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl menu;
+        
+        /// <summary>
         /// soccer control.
         /// </summary>
         /// <remarks>

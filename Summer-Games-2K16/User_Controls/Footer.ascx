@@ -6,7 +6,7 @@
     Version : 1.1
     Description : A default footer for all pages.
  -->
-<footer class="footer navbar navbar-fixed-bottom">
+<footer class="footer navbar">
     <div class="container">
         <p class="text-muted" style="color:#fff;">&copy; 2K16 SUMMER GAMES</p>
     </div>

@@ -13,5 +13,10 @@ namespace Summer_Games_2K16
         {
 
         }
+
+        protected void SendButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Games/MainMenu.aspx");
+        }
     }
 }

@@ -24,6 +24,7 @@
             <ul class="nav navbar-nav">
                 <li class="hidden-xs hidden-sm"><a href="#">|</a></li>
                 <asp:PlaceHolder ID="GamesPlaceHolder" runat="server">
+                    <li class="hvr-underline-from-center" id="menu" runat="server"><a href="/Games/MainMenu.aspx">MENU</a></li>
                     <li class="hvr-underline-from-center" id="soccer" runat="server"><a href="/Games/Soccer.aspx">SOCCER</a></li>
                     <li class="hvr-underline-from-center" id="cricket" runat="server"><a href="/Games/Cricket.aspx">CRICKET</a></li>
                     <li class="hvr-underline-from-center" id="baseball" runat="server"><a href="/Games/Baseball.aspx">BASEBALL</a></li>

@@ -12,7 +12,7 @@
         <h1> SUMMER GAMES 2016</h1>
     </div>
     
-    <div class="container" style="padding-top:50px;">
+    <div class="container" style="padding-top:50px; padding-bottom:50px;">
         <div class="row font-view">
             <div class="col-md-3 soccer">
                 <img src="../Assets/images/soccer.jpg" />
