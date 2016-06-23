@@ -5,20 +5,30 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
 //using statements to connect EF
 using Summer_Games_2K16.Models;
 using System.Web.ModelBinding;
 using System.Linq.Dynamic;
-namespace Summer_Games_2K16.Games
+
+/***
+ * @Author : Jasim Khan, Ebin Antoo
+ * @Date : 06-22-16
+ * @Description : back-end file to add new games for cricket.
+ * @Version : v3.10
+ */
+
+namespace Summer_Games_2K16.Games.Add_Games
 {
-    public partial class Add_Game : System.Web.UI.Page
+    public partial class Add_Cricket_Game : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
             if ((!IsPostBack) && (Request.QueryString.Count > 0))
             {
-               
+
                 this.GetGameData();
             }
         }
@@ -135,6 +145,5 @@ namespace Summer_Games_2K16.Games
                 Response.Redirect("/Games/Cricket.aspx");
             }
         }
-
     }
 }

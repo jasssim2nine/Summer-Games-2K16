@@ -10,6 +10,12 @@ using Summer_Games_2K16.Models;
 using System.Web.ModelBinding;
 using System.Linq.Dynamic;
 
+/***
+ * @Author : Jasim Khan, Ebin Antoo
+ * @Date : 06-22-16
+ * @Description : back-end file to run CRUD for soccer games
+ * @Version : v3.10
+ */
 namespace Summer_Games_2K16
 {
     public partial class Soccer : System.Web.UI.Page
@@ -26,7 +32,7 @@ namespace Summer_Games_2K16
             }
         }
 
-        /**
+  /**
      *
      *<summary>
      * This method connects to db and displays soccer data.
@@ -52,6 +58,15 @@ namespace Summer_Games_2K16
             }
         }
 
+        /**
+    *
+    *<summary>
+    * This method connects to db and displays soccer data.
+    * </summary> 
+    * 
+    * @method GetSoccerData
+    * @returns {void}
+    */
         protected void SoccerGridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
 

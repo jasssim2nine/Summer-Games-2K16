@@ -1,5 +1,11 @@
 ﻿<%@ Page Title="Soccer" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Soccer.aspx.cs" Inherits="Summer_Games_2K16.Soccer" %>
-
+<%--
+     Author Name : Jasim Khan, Ebin Antoo
+    Student # : 200263011, 200269378
+    Date : 08-JUn-16
+    Version : 1.1
+    Description : A default navbar for all pages.
+ --%>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
         <div class="row">
@@ -34,7 +40,7 @@
                  <!-- gridview to display the selected game and its all games -->
               <asp:GridView ID="SoccerGridView" AutoGenerateColumns="false"  CssClass="table table-bordered table-striped table-hover"
                     DataKeyNames="GAMEID" OnRowDeleting="SoccerGridView_RowDeleting" AllowPaging="true"
-                     PageSize="4" OnPageIndexChanging="SoccerGridView_PageIndexChanging"
+                     PageSize="3" OnPageIndexChanging="SoccerGridView_PageIndexChanging"
                    PagerStyle-CssClass="pagination-ys"  runat="server">
                     <Columns>
                          <asp:BoundField DataField="GAMEID" HeaderText="GameID" Visible="false"/>
@@ -62,4 +68,5 @@
                   </div>
             </div>
         </div>
+    </div>
 </asp:Content>

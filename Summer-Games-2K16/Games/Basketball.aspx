@@ -1,5 +1,11 @@
 ﻿<%@ Page Title="Basketball" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Basketball.aspx.cs" Inherits="Summer_Games_2K16.Basketball" %>
-
+<%--
+     Author Name : Jasim Khan, Ebin Antoo
+    Student # : 200263011, 200269378
+    Date : 08-JUn-16
+    Version : 1.1
+    Description : A default navbar for all pages.
+ --%>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
         <div class="row">
@@ -18,7 +24,7 @@
                            </div>
                        </div><!-- end of row -->
                    </div><!--feed-->
-
+                    <div>
                  <label for="PageSizeDropDownList"> Records Per Page: </label>
                 <asp:DropDownList ID="PageSizeDropDownList" runat="server"
                      AutoPostBack="true" CssClass="btn btn-default btn-sm dropdown-toggle"
@@ -27,12 +33,11 @@
                    <asp:ListItem Text="6" Value="6"></asp:ListItem>
                     <asp:ListItem Text="All" Value="1000"></asp:ListItem>
                </asp:DropDownList>
-                    
                   </div> 
 
                <asp:GridView ID="BasketballGridView" AutoGenerateColumns="false"  CssClass="table table-bordered table-striped table-hover"
                     DataKeyNames="GAMEID" OnRowDeleting="BasketballGridView_RowDeleting" AllowPaging="true"
-                     PageSize="4" OnPageIndexChanging="BasketballGridView_PageIndexChanging" PagerStyle-CssClass="pagination-ys" 
+                     PageSize="3" OnPageIndexChanging="BasketballGridView_PageIndexChanging" PagerStyle-CssClass="pagination-ys" 
                       runat="server">
 
                     <Columns>
@@ -58,9 +63,7 @@
                     <div class="col-md-offset-2 col-md-8">
                       <a href="/Games/Add_Games/Add_Basketball_Game.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</a>  
                   </div>
-
-
-            </div>
-        </div>
-   
+               </div>
+           </div> 
+        </div> 
 </asp:Content>

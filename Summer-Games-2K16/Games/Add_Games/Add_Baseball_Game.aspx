@@ -1,5 +1,11 @@
-﻿<%@ Page Title="Add Baseball Game" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Add_Baseball_Game.aspx.cs" Inherits="Summer_Games_2K16.Games.Add_Baseball_Game" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Add_Baseball_Game.aspx.cs" Inherits="Summer_Games_2K16.Games.Add_Games.Add_Baseball_Game" %>
+<%--
+     Author Name : Jasim Khan, Ebin Antoo
+    Student # : 200263011, 200269378
+    Date : 08-JUn-16
+    Version : 1.1
+    Description : Adding  page for only baseball games.
+ --%>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     
      
@@ -11,10 +17,10 @@
                     <asp:DropDownList ID="GameTypeDropDownList" runat="server"
                      AutoPostBack="true" CssClass="btn btn-default btn-sm dropdown-toggle"
                      >
-                   <asp:ListItem Text="Soccer" Value="soccer"></asp:ListItem>
-                        <asp:ListItem Text="Cricket" Value="cricket"></asp:ListItem>
-                        <asp:ListItem Text="Baseball" Value="baseball"></asp:ListItem>
-                        <asp:ListItem Text="Basketball" Value="basketball"></asp:ListItem>
+                   <asp:ListItem Text="Soccer" Value="soccer" Enabled="false"></asp:ListItem>
+                        <asp:ListItem Text="Cricket" Value="cricket" Enabled="false"></asp:ListItem>
+                        <asp:ListItem Text="Baseball" Value="baseball" Enabled="true"></asp:ListItem>
+                        <asp:ListItem Text="Basketball" Value="basketball" Enabled="false"></asp:ListItem>
                     </asp:DropDownList>
                 </div>
         
@@ -73,3 +79,4 @@
 
     </div>   
 </asp:Content>
+

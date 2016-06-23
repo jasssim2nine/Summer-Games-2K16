@@ -26,9 +26,9 @@ namespace Summer_Games_2K16.Games.Game_Details
         /**
          * 
          * <summary>
-         * This method gets the cricket data from database
+         * This method gets the baseball data from database
          * </summary>
-         * @method GetDepartments
+         * @method GetBaseballData
          * 
          * @returns {void}      
          */
@@ -61,7 +61,7 @@ namespace Summer_Games_2K16.Games.Game_Details
 
         /**          
        * <summary>
-       * This method takes back to the previous page, cancel
+       * This method takes back to the baseball page, cancel
        * </summary>
        * @method CancelButton_Click
        * @param {object} sender
@@ -87,7 +87,7 @@ namespace Summer_Games_2K16.Games.Game_Details
             // Use EF to connect to the server
             using (GameConnection db = new GameConnection())
             {
-                // use the Game Tracker model to create a new cricket game object and
+                // use the Game Tracker model to create a new baseball game object and
                 // save a new record
                 GAMES newGame = new GAMES();
 
@@ -104,7 +104,7 @@ namespace Summer_Games_2K16.Games.Game_Details
                                select gc).FirstOrDefault();
                 }
 
-                // add form data to the new cricket game record
+                // add form data to the new baseball game record
 
                 newGame.GAMENAME = GameNameTextBox.Text;
                 newGame.DESCRIPTION = DescriptionTextBox.Text;
@@ -120,7 +120,7 @@ namespace Summer_Games_2K16.Games.Game_Details
 
 
 
-                // use LINQ to ADO.NET to add / insert new cricket game into the database
+                // use LINQ to ADO.NET to add / insert new baseball game into the database
 
                 if (GameID == 0)
                 {

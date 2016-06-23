@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Summer_Games_2K16.Games {
+namespace Summer_Games_2K16.Games.Add_Games {
     
     
     public partial class Add_Basketball_Game {
