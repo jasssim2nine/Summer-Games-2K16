@@ -14,7 +14,7 @@
             <div class="wrapper-bg">
                 <h2 style="margin-top:15%">WELCOME TO SUMMER GAMES</h2>
                 <h3>2K16</h3>              
-                <a href="/Register.aspx" class="view-records-a">
+                <a href="/Games/Mainmenu.aspx" class="view-records-a">
                     <div class="view-records center-block">
                         View Records
                     </div>
@@ -23,5 +23,11 @@
         </div>
          
     </div>
+
+    <style>
+        .footer.footer.navbar{
+            display:none;
+        }
+    </style>
     
 </asp:Content>

@@ -22,6 +22,15 @@ namespace Summer_Games_2K16.Games.Game_Details {
         protected global::System.Web.UI.WebControls.TextBox GameNameTextBox;
         
         /// <summary>
+        /// RegularExpressionValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        
+        /// <summary>
         /// DescriptionTextBox control.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,15 @@ namespace Summer_Games_2K16.Games.Game_Details {
         protected global::System.Web.UI.WebControls.TextBox SpectatorsTextBox;
         
         /// <summary>
+        /// RegularExpressionValidator3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator3;
+        
+        /// <summary>
         /// PlayedOnTextBox control.
         /// </summary>
         /// <remarks>
@@ -47,6 +65,15 @@ namespace Summer_Games_2K16.Games.Game_Details {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox PlayedOnTextBox;
+        
+        /// <summary>
+        /// RangeValidator2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator RangeValidator2;
         
         /// <summary>
         /// WinnerTextBox control.
@@ -58,6 +85,15 @@ namespace Summer_Games_2K16.Games.Game_Details {
         protected global::System.Web.UI.WebControls.TextBox WinnerTextBox;
         
         /// <summary>
+        /// RegularExpressionValidator4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator4;
+        
+        /// <summary>
         /// TeamATextBox control.
         /// </summary>
         /// <remarks>
@@ -65,6 +101,15 @@ namespace Summer_Games_2K16.Games.Game_Details {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TeamATextBox;
+        
+        /// <summary>
+        /// RegularExpressionValidator5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator5;
         
         /// <summary>
         /// PointATextBox control.
@@ -76,6 +121,15 @@ namespace Summer_Games_2K16.Games.Game_Details {
         protected global::System.Web.UI.WebControls.TextBox PointATextBox;
         
         /// <summary>
+        /// RangeValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator RangeValidator1;
+        
+        /// <summary>
         /// TeamBTextBox control.
         /// </summary>
         /// <remarks>
@@ -83,6 +137,15 @@ namespace Summer_Games_2K16.Games.Game_Details {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TeamBTextBox;
+        
+        /// <summary>
+        /// RegularExpressionValidator6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator6;
         
         /// <summary>
         /// PointBTextBox control.
@@ -94,6 +157,15 @@ namespace Summer_Games_2K16.Games.Game_Details {
         protected global::System.Web.UI.WebControls.TextBox PointBTextBox;
         
         /// <summary>
+        /// RangeValidator3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator RangeValidator3;
+        
+        /// <summary>
         /// TotalPointsTextBox control.
         /// </summary>
         /// <remarks>
@@ -101,6 +173,15 @@ namespace Summer_Games_2K16.Games.Game_Details {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TotalPointsTextBox;
+        
+        /// <summary>
+        /// RangeValidator4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator RangeValidator4;
         
         /// <summary>
         /// CancelButton control.
