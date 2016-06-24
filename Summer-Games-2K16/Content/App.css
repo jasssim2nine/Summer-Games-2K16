@@ -147,7 +147,7 @@
 }
 
 .cen-text{
-    top: 50%;
+    top: 45%;
     left: 20%;
     font-size: 3em;
     position: absolute;
@@ -448,3 +448,7 @@ form#login-form {
     color:white;
 }
 
+.menu-img{
+    width:90%;
+    height:335px;
+}
