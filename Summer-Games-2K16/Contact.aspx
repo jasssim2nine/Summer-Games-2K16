@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="Get In Touch!" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Summer_Games_2K16.Contact" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-   <div class="container">
+   <div class="container-fluid">
         <div class="row">
-            <div class="col-md-offset-2 col-md-6 text-center">
+            <div class="col-md-offset-2 col-md-8 text-center">
                 <h1>Contact Us</h1>
             </div>
         </div>
