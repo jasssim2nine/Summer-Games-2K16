@@ -53,9 +53,7 @@
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         </asp:ContentPlaceHolder>
     </div>
-    <div class="navbar navbar-inverse navbar-fixed-bottom bg-info" style="height:-150px;">
-        <p class="text-muted" style="color:#fff;">&copy; 2K16 SUMMER GAMES</p>
-    </div>
+    <bs29:Footer runat="server" />
     </form>
     <!-- javascript section -->
     <script src="/Scripts/jquery-2.2.3.min.js"></script>

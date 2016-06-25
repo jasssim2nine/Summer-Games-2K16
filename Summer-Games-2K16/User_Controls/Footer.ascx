@@ -7,7 +7,7 @@
     Description : A default footer for all pages.
  -->
 
-<footer class="footer navbar" style="margin-top:15px;">
+<footer class="footer navbar">
     <div class="container">
         <p class="text-muted" style="color:#fff;">&copy; 2K16 SUMMER GAMES</p>
     </div>

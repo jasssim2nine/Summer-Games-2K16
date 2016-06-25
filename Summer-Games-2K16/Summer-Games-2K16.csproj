@@ -134,12 +134,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\images\add-game.JPG" />
+    <Content Include="Assets\images\baseball-page.JPG" />
     <Content Include="Assets\images\baseball.jpg" />
+    <Content Include="Assets\images\basketball-page.jpg" />
     <Content Include="Assets\images\basketball.jpg" />
+    <Content Include="Assets\images\cricket-page.JPG" />
     <Content Include="Assets\images\cricket.jpg" />
+    <Content Include="Assets\images\edit-page.JPG" />
     <Content Include="Assets\images\football-stadium-soccer-pitch-wallpaper.jpg" />
+    <Content Include="Assets\images\github_version3.JPG" />
     <Content Include="Assets\images\git_screenshot.JPG" />
+    <Content Include="Assets\images\login-page.JPG" />
+    <Content Include="Assets\images\main-menu.JPG" />
     <Content Include="Assets\images\screenshot.JPG" />
+    <Content Include="Assets\images\soccer-page.JPG" />
     <Content Include="Assets\images\soccer.jpg" />
     <Content Include="ChangePassword.aspx" />
     <Content Include="Games\Add_Games\Add_Baseball_Game.aspx" />

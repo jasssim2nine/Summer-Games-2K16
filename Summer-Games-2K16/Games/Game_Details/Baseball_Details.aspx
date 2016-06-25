@@ -52,10 +52,7 @@
                     <asp:TextBox runat="server" CssClass="form-control" ID="WinnerTextBox" placeholder="Winner" required="true"></asp:TextBox>                    
                     <asp:RequiredFieldValidator runat="server" ControlToValidate="WinnerTextBox" ErrorMessage="Winner cannot be empty"
                          Display="Dynamic" BackColor="Red" ForeColor="White" Font-Size="Large"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="WinnerTextBox"
-                        ValidationExpression="[a-zA-Z]*$" ErrorMessage="Winner cannot be numbers/special characters"
-                        Display="Dynamic" BackColor="Red" ForeColor="White" Font-Size="Large" />
-                </div>
+                    
 
             </div>
             <div class="col-md-6">
@@ -64,10 +61,7 @@
                     <asp:TextBox runat="server" CssClass="form-control" ID="TeamATextBox" placeholder="Team Name" required="true"></asp:TextBox>                    
                     <asp:RequiredFieldValidator runat="server" ControlToValidate="TeamATextBox" ErrorMessage="Team Name cannot be empty"
                          Display="Dynamic" BackColor="Red" ForeColor="White" Font-Size="Large"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="TeamATextBox"
-                        ValidationExpression="[a-zA-Z]*$" ErrorMessage="Team Name cannot be numbers/special characters"
-                        Display="Dynamic" BackColor="Red" ForeColor="White" Font-Size="Large" />
-                </div>
+                     </div>
                  <div class="form-group">
                     <label class="control-label" for="PointATextBox">Team A Points</label>
                     <asp:TextBox runat="server" CssClass="form-control" ID="PointATextBox" placeholder="Team A Points" required="true"></asp:TextBox>                     
@@ -82,10 +76,7 @@
                     <asp:TextBox runat="server" CssClass="form-control" ID="TeamBTextBox" placeholder="Team Name" required="true"></asp:TextBox>                    
                     <asp:RequiredFieldValidator runat="server" ControlToValidate="TeamBTextBox" ErrorMessage="Team Name cannot be empty"
                          Display="Dynamic" BackColor="Red" ForeColor="White" Font-Size="Large"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="TeamBTextBox"
-                        ValidationExpression="[a-zA-Z]*$" ErrorMessage="Team Name cannot be numbers/special characters"
-                        Display="Dynamic" BackColor="Red" ForeColor="White" Font-Size="Large" />
-                </div>
+                 </div>
                 <div class="form-group">
                     <label class="control-label" for="PointBTextBox">Team B Points</label>
                     <asp:TextBox runat="server" CssClass="form-control" ID="PointBTextBox" placeholder="Team B Points" required="true"></asp:TextBox>                    

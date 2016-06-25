@@ -27,19 +27,24 @@
         <!-- gridview to display the selected game and its all games -->
                 <asp:GridView ID="CricketGridView" AutoGenerateColumns="false"  CssClass="table table-bordered table-striped table-hover"
                     DataKeyNames="GAMEID" OnRowDeleting="CricketGridView_RowDeleting" AllowPaging="true"
+                     AllowSorting="true" OnSorting="CricketGridView_Sorting" OnRowDataBound="CricketGridView_RowDataBound"
                      PageSize="3" OnPageIndexChanging="CricketGridView_PageIndexChanging" PagerStyle-CssClass="pagination-ys"  runat="server">
                     <Columns>
-                         <asp:BoundField DataField="GAMEID" HeaderText="GameID" Visible="false"/>
-                        <asp:BoundField DataField="GAMENAME" HeaderText="Game Name" Visible="true"/>
-                        <asp:BoundField DataField="DESCRIPTION" HeaderText="Description" Visible="true"/>
-                        <asp:BoundField DataField="SPECTATORS" HeaderText="Spectators" Visible="true"/>
-                        <asp:BoundField DataField="TEAM_A" HeaderText="Team A" Visible="true"/>
-                        <asp:BoundField DataField="TEAM_B" HeaderText="Team B" Visible="true"/>
-                        <asp:BoundField DataField="PLAYED_ON" HeaderText="Played on" Visible="true" DataFormatString="{0:MMM dd, yyyy}"/>
-                        <asp:BoundField DataField="WINNER" HeaderText="Winner" Visible="true"/>
-                        <asp:BoundField DataField="TEAM_A_POINTS" HeaderText="Team A Points" Visible="true"/>
-                        <asp:BoundField DataField="TEAM_B_POINTS" HeaderText="Team B Points" Visible="true"/>
-                        <asp:BoundField DataField="TOTAL_POINTS" HeaderText="Total Points" Visible="true"/>
+                         <asp:BoundField DataField="GAMEID" HeaderText="GameID" Visible="false" SortExpression="GameID"/>
+                        <asp:BoundField DataField="GAMENAME" HeaderText="Game Name" Visible="true" SortExpression="GameName"/>
+                        <asp:BoundField DataField="DESCRIPTION" HeaderText="Description" Visible="true" SortExpression="Description"/>
+                        <asp:BoundField DataField="SPECTATORS" HeaderText="Spectators" Visible="true" SortExpression="Spectators"/>
+                        <asp:BoundField DataField="TEAM_A" HeaderText="Team A" Visible="true" SortExpression="Team_A"/>
+                        <asp:BoundField DataField="TEAM_B" HeaderText="Team B" Visible="true" SortExpression="Team_B"/>
+                        <asp:BoundField DataField="PLAYED_ON" HeaderText="Played on" Visible="true" DataFormatString="{0:MMM dd, yyyy}" 
+                           SortExpression="Played_On" />
+                        <asp:BoundField DataField="WINNER" HeaderText="Winner" Visible="true" SortExpression="Winner"/>
+                        <asp:BoundField DataField="TEAM_A_POINTS" HeaderText="Team A Points" Visible="true"
+                            SortExpression="Team_A_Points" />
+                        <asp:BoundField DataField="TEAM_B_POINTS" HeaderText="Team B Points" Visible="true"
+                            SortExpression="Team_B_Points" />
+                        <asp:BoundField DataField="TOTAL_POINTS" HeaderText="Total Points" Visible="true"
+                            SortExpression="Total_Points"/>
                         <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'/> Edit"
                                 navigateurl="~/Cricket_Details.aspx" ControlStyle-CssClass="btn btn-primary btn-sm" runat="server" 
                                 DataNavigateUrlFields="GAMEID"   DataNavigateUrlFormatString="/Games/Game_Details/Cricket_Details.aspx?GameID={0}"  />

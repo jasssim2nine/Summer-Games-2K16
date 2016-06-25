@@ -452,3 +452,7 @@ form#login-form {
     width:90%;
     height:335px;
 }
+.footer.navbar
+{
+    margin-top:60px;
+}

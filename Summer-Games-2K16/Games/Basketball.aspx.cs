@@ -27,7 +27,10 @@ namespace Summer_Games_2K16
             //if page loads the first time,populate cricket grid.
             if (!IsPostBack)
             {
-                //get cricket table/data
+                //create a session variable and stored as default
+                Session["SortColumn"] = "GAMEID";
+                Session["SortDirection"] = "ASC";
+                //get basketball table/data
                 this.GetBasketballData();
             }
         }
@@ -48,12 +51,13 @@ namespace Summer_Games_2K16
             //connect to EF
             using (GameConnection db = new GameConnection())
             {
+                string SortString = Session["SortColumn"].ToString() + " " + Session["SortDirection"].ToString();
 
                 var cricketQuery = (from gc in db.GAMES
                                     where gc.GAME_TYPE == "basketball"
                                     select gc);
 
-                BasketballGridView.DataSource = cricketQuery.ToList();
+                BasketballGridView.DataSource = cricketQuery.AsQueryable().OrderBy(SortString).ToList();
                 BasketballGridView.DataBind();
             }
         }
@@ -99,6 +103,60 @@ namespace Summer_Games_2K16
             BasketballGridView.PageSize = Convert.ToInt32(PageSizeDropDownList.SelectedValue);
             //refresh the grid
             this.GetBasketballData();
+        }
+        /// <summary>
+        /// This handler handles sorting
+        /// </summary>
+        /// @Param (object) sender
+        /// @Param (GridViewSotEventArgs) e
+        /// @returns (void)
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        protected void BasketballGridView_Sorting(object sender, GridViewSortEventArgs e)
+        {
+            //get the column to sort by
+            Session["SortColumn"] = e.SortExpression;
+
+            //refresh the grid
+            this.GetBasketballData();
+            //create a toggle for the direction
+            Session["SortDirection"] = Session["SortDirection"].ToString() == "ASC" ? "DESC" : "ASC";
+        }
+        /// <summary>
+        /// This method adds the caret to the headers of the table..
+        /// </summary>
+        /// @Param (object) sender
+        /// @Param (GridViewRowEventArgs) e
+        /// @Param (void)
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        protected void BasketballGridView_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            if (IsPostBack)
+            {
+                if (e.Row.RowType == DataControlRowType.Header) // if header row has been clicked
+                {
+                    LinkButton linkbutton = new LinkButton();
+
+                    for (int index = 0; index < BasketballGridView.Columns.Count - 1; index++)
+                    {
+                        if (BasketballGridView.Columns[index].SortExpression == Session["SortColumn"].ToString())
+                        {
+                            if (Session["SortDirection"].ToString() == "ASC")
+                            {
+                                linkbutton.Text = " <i class='fa fa-caret-up fa-lg'></i>";
+                            }
+                            else
+                            {
+                                linkbutton.Text = " <i class='fa fa-caret-down fa-lg'></i>";
+                            }
+
+                            e.Row.Cells[index].Controls.Add(linkbutton);
+                        }
+                    }
+                }
+            }
+
         }
     }
 }
